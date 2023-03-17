@@ -199,7 +199,9 @@ const Home: NextPageWithLayout = () => {
               }}
               className={"bg-white h-10 rounded-xl w-[200px] text-gray-900"}
             >
-              Get Started
+              <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
+                      Get Started
+                    </p>
             </Button>
           </div>
         </div>
@@ -318,7 +320,9 @@ const Home: NextPageWithLayout = () => {
                 className={"bg-red-500 h-[65px] rounded-[15px] w-10/12 my-2"}
                 onClick={() => setGetStarted(true)}
               >
-                <p className="text-white text-sm font-sans">Get Started</p>
+                <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
+                      Clients
+                    </p>
               </Button>
             </Card>
           ) : isTabletOrMobile && getStarted === true ? (
@@ -341,12 +345,12 @@ const Home: NextPageWithLayout = () => {
             <Card className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full">
-                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-600 ">
+                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Clients
                     </p>
                   </Card>
-                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-600">
+                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Management
                     </p>
