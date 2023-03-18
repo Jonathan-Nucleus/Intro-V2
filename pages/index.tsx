@@ -190,7 +190,7 @@ const Home: NextPageWithLayout = () => {
             isTabletOrMobile ? "px-8" : "px-28"
           }`}
         >
-          <Image height={100} width={100} src={"/images/logo.png"} alt={"Logo"} />
+          <Image height={100} width={100} src={"logo.png"} alt={"logo"} />
           <div>
             <Button
               variant={"primary"}
@@ -379,7 +379,7 @@ const Home: NextPageWithLayout = () => {
                   className="rounded-xl"
                   height={"full"}
                   style={{ objectFit: "cover", height: 660 }}
-                  src={"/couple.mp4"}
+                  src={"couple.mp4"}
                   autoPlay={true}
                   muted={true}
                   loop={true}
