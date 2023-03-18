@@ -190,7 +190,7 @@ const Home: NextPageWithLayout = () => {
             isTabletOrMobile ? "px-8" : "px-28"
           }`}
         >
-          <Image height={100} width={100} src={"/logo.png"} alt={"Logo"} />
+          <Image height={100} width={100} src={"/images/logo.png"} alt={"Logo"} />
           <div>
             <Button
               variant={"primary"}
