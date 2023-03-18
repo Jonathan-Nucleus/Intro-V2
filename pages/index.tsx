@@ -121,9 +121,9 @@ const Home: NextPageWithLayout = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
   const instructions = [
-    "Enter your information",
-    "Sign up and generate your card",
-    "Add card to your mobile wallet",
+    "Select Option",
+    "Complete Onboarding",
+    "Access Service",
   ];
 
   return (
@@ -239,7 +239,7 @@ const Home: NextPageWithLayout = () => {
           </div>
           <div className={isTabletOrMobile ? "w-8/12 mt-6" : "w-6/12"}>
             <p
-              className={`text-zinc-200 text-[18px] font-sans font-normal ${
+              className={`text-zinc-400 text-[18px] font-sans font-normal ${
                 isTabletOrMobile ? "text-center" : "text-center"
               }`}
             >
@@ -248,7 +248,28 @@ const Home: NextPageWithLayout = () => {
             </p>
           </div>
           {isTabletOrMobile ? (
-            ""
+            <div className="mt-16">
+              {instructions.map((val, index) => {
+                return (
+                  
+                    <div className="flex flex-row items-center justify-start mb-4">
+                      <CircularButton
+                        icon={
+                          <p className="text-white font-bold text-md">
+                            {index + 1}
+                          </p>
+                        }
+                        onPressed={() => {}}
+                        bgColor={"red"}
+                      />
+                      <p className="text-zinc-200 text-md font-sans ml-4">
+                        {val}
+                      </p>
+                    </div>
+                 
+                );
+              })}
+            </div>
           ) : (
             <div className="w-7/12 flex flex-row justify-around items-baseline mt-32">
               <div className="flex flex-row items-center justify-center">
@@ -257,7 +278,7 @@ const Home: NextPageWithLayout = () => {
                   onPressed={() => {}}
                   bgColor={"red"}
                 />
-                <p className="text-white text-sm font-sans ml-4">
+                <p className="text-zinc-200 text-sm font-sans ml-4">
                   Select Option
                 </p>
               </div>
@@ -268,7 +289,7 @@ const Home: NextPageWithLayout = () => {
                   onPressed={() => {}}
                   bgColor={"red"}
                 />
-                <p className="text-white text-sm font-sans ml-4">
+                <p className="text-zinc-200 text-sm font-sans ml-4">
                   Complete Onboarding
                 </p>
               </div>
@@ -278,7 +299,7 @@ const Home: NextPageWithLayout = () => {
                   onPressed={() => {}}
                   bgColor={"red"}
                 />
-                <p className="text-white text-sm font-sans ml-4">
+                <p className="text-zinc-200 text-sm font-sans ml-4">
                   Access Service
                 </p>
               </div>
@@ -294,54 +315,35 @@ const Home: NextPageWithLayout = () => {
               : "h-[600px]"
           }`}
         >
-          {isTabletOrMobile && getStarted === false ? (
-            <Card className="h-[400px] w-10/12 roundedXl flex flex-col justify-center items-center bg-white absolute bottom-[0px]">
-              {instructions.map((val, index) => {
-                return (
-                  <Card className="h-16 w-10/12 bg-gray-100 my-2">
-                    <div className="flex flex-row items-center justify-start">
-                      <CircularButton
-                        icon={
-                          <p className="text-white font-bold text-md">
-                            {index + 1}
-                          </p>
-                        }
-                        onPressed={() => {}}
-                        bgColor={"red"}
-                      />
-                      <p className="text-gray-900 text-md font-sans ml-4">
-                        {val}
-                      </p>
-                    </div>
-                  </Card>
-                );
-              })}
-              <Button
-                variant={"primary"}
-                className={"bg-red-500 h-[65px] rounded-[15px] w-10/12 my-2"}
-                onClick={() => setGetStarted(true)}
-              >
-                <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
-                      Clients
-                    </p>
-              </Button>
-            </Card>
-          ) : isTabletOrMobile && getStarted === true ? (
-            <Card className="h-[900px] w-10/12 roundedXl flex flex-col justify-center items-center bg-white absolute bottom-[0px]">
-              {flowStep === "one" ? (
-                <div className="w-full h-full">
-                  <StepOne onSubmit={onSubmitStepOne} />
-                </div>
-              ) : (
-                <div className="w-full h-full">
-                  <StepTwo
-                    onSubmit={onSubmitStepTwo}
-                    onPrev={() => setFlowStep("one")}
-                    loadingVal={xloading}
-                  />
-                </div>
-              )}
-            </Card>
+          {isTabletOrMobile ? (
+            <Card className="h-[700px] w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0">
+            <div className="h-full w-full  flex flex-col justify-between items-left z-0">
+              <div className="w-full">
+                <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500">
+                  <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                    Clients
+                  </p>
+                </Card>
+                <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500">
+                  <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                    Management
+                  </p>
+                </Card>
+              </div>
+            </div>
+          
+              <video
+                className="rounded-xl"
+                height={"full"}
+                style={{ objectFit: "cover", height: 400 }}
+                src={"couple.mp4"}
+                autoPlay={true}
+                muted={true}
+                loop={true}
+                
+              />
+           
+          </Card>
           ) : (
             <Card className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
@@ -391,14 +393,14 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isTabletOrMobile ? "mt-[100px]" : "mt-[0px]"
+            isTabletOrMobile ? "mt-[550px]" : "mt-[0px]"
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
               {isTabletOrMobile
-                ? "Why a Digital ID ?"
-                : "Core Areas of Service ?"}
+                ? "Core Areas of Service"
+                : "Core Areas of Service"}
             </p>
           </div>
           <div className="w-8/12">
@@ -411,7 +413,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex justify-center mt-20 mb-20 bg-gray-50 ${
-            isTabletOrMobile ? "flex-col items-center" : "flex-row"
+            isTabletOrMobile ? "flex-col items-center mt-20" : "flex-row"
           }`}
         >
           <Card
