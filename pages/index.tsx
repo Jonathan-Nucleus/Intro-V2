@@ -27,6 +27,7 @@ import { getFunctions, httpsCallable } from "firebase/functions";
 import RedirectModal from "../modules/redirect";
 import { NextPageWithLayout } from "../types/next-page";
 import { FormProvider, useForm } from "react-hook-form";
+import Logo from "../public/logo.png";
 
 import { storage } from "../firebaseConfig";
 import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
@@ -382,6 +383,7 @@ const Home: NextPageWithLayout = () => {
                   autoPlay={true}
                   muted={true}
                   loop={true}
+                  
                 />
               </div>
             </Card>
