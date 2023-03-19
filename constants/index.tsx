@@ -1,4 +1,4 @@
-import { Coins, ChartPie, Asterisk, Gift, Files, GraduationCap } from "phosphor-react";
+import { Coins, ChartPie, EggCrack, Gift, Files, GraduationCap } from "phosphor-react";
 
 export const accordionData = [
   {
@@ -50,15 +50,10 @@ export const coreAreasOfService = [
     subtitle: "Curating personalized portfolios with a diverse range of assets to meet clients' risk tolerance, investment horizon, and financial objectives.",
   },
   {
-    icon: <Asterisk size={40} color={"#4F46E5"} />,
+    icon: <EggCrack size={40} color={"#4F46E5"} />,
     title: "Risk Management",
     subtitle:
       "Identifying and mitigating potential financial risks by incorporating insurance and diversification strategies to protect clients' wealth and ensure financial stability.",
-  },
-  {
-    icon: <Gift size={40} color={"#4F46E5"} />,
-    title: "Estate & Legacy Planning",
-    subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
   },
   {
     icon: <Files size={40} color="#4F46E5" />,
@@ -66,9 +61,18 @@ export const coreAreasOfService = [
     subtitle: "Implementing tax-efficient strategies to minimize tax liabilities, maximize after-tax returns, and maintain compliance with ever-changing tax regulations.",
   },
   {
+    icon: <Gift size={40} color={"#4F46E5"} />,
+    title: "Estate & Legacy Planning",
+    subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
+  },
+  {
     icon: <GraduationCap size={40} color={"#4F46E5"} />,
-    title: "Financial Education",
+    title: "Wealth Education",
     subtitle:
       "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",
   },
 ];
+
+export const notice = "Dear valued customers, we would like to inform you that our service is currently under active development and will be available soon. Our team is working tirelessly to ensure that we provide you with the best possible service. We apologize for any inconvenience this may cause and appreciate your patience during this time. Rest assured that we are doing everything we can to make the service available to you as soon as possible."
+
+export const service = "Our wealth management as a service platform provides personalized investment strategies and comprehensive management, tailored to meet each client's unique financial goals."
