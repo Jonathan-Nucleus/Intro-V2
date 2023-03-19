@@ -20,6 +20,8 @@ const Home: NextPageWithLayout = () => {
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
+  const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
+
   const cardRef:any = useRef();
 
   const handleGetStarted = () => {
@@ -167,16 +169,16 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           {isTabletOrMobile ? (
-            <Card className="h-[650px] w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0">
-              <div className="h-full w-full  flex flex-col justify-between items-left z-0">
+            <Card className={` ${isMobile ? "h-[600px]" : "h-[700px]"} w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}>
+              <div className={`h-full w-full  flex flex-col justify-between items-left ${isTabletOrMobile ? "mb-6" : isMobile ? "" : ""} z-0`}>
                 <div className="w-full">
-                  <Card className={`h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 ${isTabletOrMobile ? "shadow-md" : "drop-shadow-sm border border-indigo-500" }`}>
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                  <Card className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  mb-5 ${isTabletOrMobile ? " bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-900" : "bg-white drop-shadow-sm border border-indigo-500" }`}>
+                    <p className="text-white text-lg font-sans font-extrabold">
                       Clients
                     </p>
                   </Card>
-                  <Card className={`h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white ${isTabletOrMobile ? "shadow-md" : "drop-shadow-sm border border-indigo-500" }`}>
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                  <Card className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  ${isTabletOrMobile ? " bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-900" : " bg-white drop-shadow-sm border border-indigo-500" }`}>
+                    <p className="text-white text-lg font-sans font-extrabold">
                       Management
                     </p>
                   </Card>
@@ -185,7 +187,7 @@ const Home: NextPageWithLayout = () => {
               <video
                 className="rounded-xl"
                 height={"full"}
-                style={{ objectFit: "cover", height: 400 }}
+                style={{ objectFit: "cover", height: isTabletOrMobile ? 450 : 400 }}
                 src={"couple.mp4"}
                 autoPlay={true}
                 muted={true}
@@ -237,7 +239,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isTabletOrMobile ? "mt-[0px]" : "mt-[0px]"
+            isMobile ? "mt-[0px]" :  "mt-[100px]"
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
