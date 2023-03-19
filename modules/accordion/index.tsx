@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { CaretCircleDown, CaretCircleUp } from "phosphor-react";
 import "animate.css";
 import Card from "../../components/Card";
+import { useMediaQuery } from "react-responsive";
 
 interface AccordionProps {
   title: string;
@@ -10,15 +11,19 @@ interface AccordionProps {
 
 const Accordion: FC<AccordionProps> = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1000px)",
+  });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
   return (
-    <Card className="w-8/12 mb-4 bg-white drop-shadow-sm rounded-xl cursor-pointer">
+    <Card className={`mb-4 bg-white drop-shadow-sm rounded-xl cursor-pointer ${isDesktopOrLaptop ? "w-8/12" : "w-10/12"}`}>
       <div
         className="min-h-20 rounded-xl flex flex-row items-center justify-between"
         onClick={() => setIsActive(!isActive)}
       >
         <div className="text-lg font-normal">{title}</div>
-        {isActive ? <CaretCircleUp size={25} /> : <CaretCircleDown size={25} />}
+        <div>{isActive ? <CaretCircleUp size={25} /> : <CaretCircleDown size={25} />}</div>
       </div>
       {isActive && (
         <div className="mt-4 animate__animated animate__fadeIn">{content}</div>

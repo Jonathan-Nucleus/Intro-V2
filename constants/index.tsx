@@ -1,3 +1,5 @@
+import { Coins, ChartPie, Asterisk, Gift, Files, GraduationCap } from "phosphor-react";
+
 export const accordionData = [
   {
     title: 'What is Multivurse?',
@@ -28,4 +30,45 @@ export const accordionData = [
     title: 'Can I try Multivurse before I buy it?',
     content: `Yes, we offer a free trial of Multivurse so you can try it before you buy it. Please contact us to learn more about our free trial and to get started.`
   }
+];
+
+export const instructions = [
+  "Select Option",
+  "Complete Onboarding",
+  "Access Service",
+];
+
+export const coreAreasOfService = [
+  {
+    icon: <Coins size={40} color={"#4F46E5"} />,
+    title: "Financial Planning",
+    subtitle: "Comprehensive financial plans that helps clients assess their financial situation, set realistic goals, and develop strategies to achieve those objectives",
+  },
+  {
+    icon: <ChartPie size={40} color="#4F46E5" />,
+    title: "Investment Management",
+    subtitle: "Curating personalized portfolios with a diverse range of assets to meet clients' risk tolerance, investment horizon, and financial objectives.",
+  },
+  {
+    icon: <Asterisk size={40} color={"#4F46E5"} />,
+    title: "Risk Management",
+    subtitle:
+      "Identifying and mitigating potential financial risks by incorporating insurance and diversification strategies to protect clients' wealth and ensure financial stability.",
+  },
+  {
+    icon: <Gift size={40} color={"#4F46E5"} />,
+    title: "Estate & Legacy Planning",
+    subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
+  },
+  {
+    icon: <Files size={40} color="#4F46E5" />,
+    title: "Tax Optimization",
+    subtitle: "Implementing tax-efficient strategies to minimize tax liabilities, maximize after-tax returns, and maintain compliance with ever-changing tax regulations.",
+  },
+  {
+    icon: <GraduationCap size={40} color={"#4F46E5"} />,
+    title: "Financial Education",
+    subtitle:
+      "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",
+  },
 ];

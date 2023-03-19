@@ -14,7 +14,6 @@ import {
 } from "phosphor-react";
 
 import MenuItem from "./MenuItem";
-import { useSignout } from "../../context/signoutContext";
 
 const MENU_ITEMS = [
   { route: "/id", icon: IdentificationCard, label: "ID Details" },
@@ -30,7 +29,6 @@ const MENU_ITEMS = [
 const NavMenu: FC = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(0);
   const router = useRouter();
-  const { value, toggleValue} = useSignout();
   return (
     <div>
       <div className="h-screen w-60 bg-transparent mr-10">
@@ -54,14 +52,7 @@ const NavMenu: FC = () => {
                 }
                 menuTitle={label}
                 active={activeMenuItem === index ? true : false}
-                onPressed={
-                  index === 5 || index === 6
-                    ? () => {}
-                    : index === 7 ? () => toggleValue() : () => {
-                        setActiveMenuItem(index);
-                        router.push(route);
-                      }
-                }
+                onPressed={()=> {}}
               />
             );
           }

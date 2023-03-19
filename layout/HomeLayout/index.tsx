@@ -12,7 +12,6 @@ import {
 import Alert from "../../components/Alert";
 import Button from "../../components/Button";
 import ModalDialog from "../../components/ModalDialog";
-import { useSignout } from "../../context/signoutContext";
 import router from "next/router";
 
 type MainLayoutProps = PropsWithChildren<unknown> & {
@@ -20,41 +19,12 @@ type MainLayoutProps = PropsWithChildren<unknown> & {
 };
 
 const HomeLayout: FC<MainLayoutProps> = ({ children }: MainLayoutProps) => {
-  const { value, toggleValue } = useSignout();
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1000px)",
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
   return (
     <>
-      <ModalDialog
-        title={"Are you sure ?"}
-        show={value}
-        onClose={() => toggleValue()}
-        className={`shadow-lg rounded-3xl h-[300px] justify-between ${
-          isDesktopOrLaptop ? "w-4/12" : "w-full"
-        }`}
-      >
-        <div className="flex w-full flex-row justify-between items-center mt-6 relative mb-0">
-          <Button
-            variant={"primary"}
-            className={"bg-gray-300 h-[60px] rounded-xl w-full mr-6"}
-            onClick={() => toggleValue()}
-          >
-            <p className="text-black text-sm font-sans">Cancel</p>
-          </Button>
-          <Button
-            variant={"primary"}
-            className={"bg-red-500 h-[60px] rounded-xl w-full"}
-            onClick={() => {
-              toggleValue();
-              router.push("/");
-            }}
-          >
-            <p className="text-white text-sm font-sans">Sign Out</p>
-          </Button>
-        </div>
-      </ModalDialog>
       <div className="flex flex-col h-full w-full">
         <div
           className={
