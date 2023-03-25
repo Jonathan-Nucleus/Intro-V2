@@ -124,37 +124,24 @@ const Home: NextPageWithLayout = () => {
             </div>
           ) : (
             <div  ref={ isDesktopOrLaptop ? cardRef : null} className="w-7/12 flex flex-row justify-around items-baseline mt-32">
-              <div className="flex flex-row items-center justify-center">
-                <CircularButton
-                  icon={<p className="text-white font-bold text-md">1</p>}
-                  onPressed={() => {}}
-                  bgColor={"red"}
-                />
-                <p className="text-zinc-200 text-sm font-sans ml-4">
-                  Select Option
-                </p>
-              </div>
-
-              <div className="flex flex-row items-center justify-center">
-                <CircularButton
-                  icon={<p className="text-white font-bold text-md">2</p>}
-                  onPressed={() => {}}
-                  bgColor={"red"}
-                />
-                <p className="text-zinc-200 text-sm font-sans ml-4">
-                  Complete Onboarding
-                </p>
-              </div>
-              <div className="flex flex-row items-center justify-center">
-                <CircularButton
-                  icon={<p className="text-white font-bold text-md">3</p>}
-                  onPressed={() => {}}
-                  bgColor={"red"}
-                />
-                <p className="text-zinc-200 text-sm font-sans ml-4">
-                  Access Service
-                </p>
-              </div>
+              {instructions.map((val, index) => {
+                return (
+                  <div className="flex flex-row items-center justify-start mb-4">
+                    <CircularButton
+                      icon={
+                        <p className="text-white font-bold text-md">
+                          {index + 1}
+                        </p>
+                      }
+                      onPressed={() => {}}
+                      bgColor={"red"}
+                    />
+                    <p className="text-zinc-200 text-md font-sans ml-4">
+                      {val}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
