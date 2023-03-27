@@ -189,16 +189,20 @@ const Home: NextPageWithLayout = () => {
             >
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full">
+                <a href="https://clients.multivurse.com/" target="_blank" rel="noopener noreferrer">
                   <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Clients
                     </p>
                   </Card>
+                  </a>
+                  <a href="https://clients.multivurse.com/" target="_blank" rel="noopener noreferrer">
                   <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Management
                     </p>
                   </Card>
+                  </a>
                 </div>
                 <div className="w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">

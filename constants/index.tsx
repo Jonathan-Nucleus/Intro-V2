@@ -46,8 +46,9 @@ export const coreAreasOfService = [
   },
   {
     icon: <ChartPie size={40} color="#4F46E5" />,
-    title: "Investment Management",
-    subtitle: "Curating personalized portfolios with a diverse range of assets to meet clients' risk tolerance, investment horizon, and financial objectives.",
+    title: "Portfolio Management",
+    subtitle:
+      "Designing and managing investment portfolios that align with clients' financial goals, risk tolerance, and time horizon by selecting and balancing a mix of different assets.",
   },
   {
     icon: <EggCrack size={40} color={"#4F46E5"} />,
@@ -57,8 +58,9 @@ export const coreAreasOfService = [
   },
   {
     icon: <Files size={40} color="#4F46E5" />,
-    title: "Tax Optimization",
-    subtitle: "Implementing tax-efficient strategies to minimize tax liabilities, maximize after-tax returns, and maintain compliance with ever-changing tax regulations.",
+    title: "Tax Planning",
+    subtitle:
+      "Developing and executing tax strategies to optimize clients' tax positions by identifying deductions, credits, and deferrals, while staying up-to-date with the latest tax laws and regulations.",
   },
   {
     icon: <Gift size={40} color={"#4F46E5"} />,
