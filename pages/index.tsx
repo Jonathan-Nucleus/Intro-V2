@@ -196,7 +196,7 @@ const Home: NextPageWithLayout = () => {
                     </p>
                   </Card>
                   </a>
-                  <a href="https://clients.multivurse.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://management.multivurse.com/" target="_blank" rel="noopener noreferrer">
                   <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Management
