@@ -184,30 +184,23 @@ const Home: NextPageWithLayout = () => {
               >
                 <div className="w-full">
                   <Card
-                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  mb-2 ${
-                      
-                         "bg-white shadow-lg border border-indigo-500"
-                    }`}
+                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                    <p className="text-white text-lg font-sans font-bold">
                       Clients
                     </p>
                   </Card>
                   <Card
-                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center mb-2  ${
-                       " bg-white shadow-lg border border-indigo-500"
-                    }`}
+                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                    <p className="text-white text-lg font-sans font-bold">
                       Professionals
                     </p>
                   </Card>
                   <Card
-                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  ${
-                       " bg-white shadow-lg border border-indigo-500"
-                    }`}
+                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
                   >
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                    <p className="text-white text-lg font-sans font-bold">
                       Management
                     </p>
                   </Card>
