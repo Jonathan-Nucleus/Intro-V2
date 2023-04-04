@@ -1,8 +1,5 @@
 import Head from "next/head";
-import {
-  TwitterLogo,
-  LinkedinLogo,
-} from "phosphor-react";
+import { TwitterLogo, LinkedinLogo } from "phosphor-react";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import CircularButton from "../components/Circular";
@@ -11,7 +8,13 @@ import Image from "next/image";
 import Card from "../components/Card";
 import Feature from "../modules/feature";
 import Accordion from "../modules/accordion";
-import { accordionData, coreAreasOfService, instructions, notice, service } from "../constants";
+import {
+  accordionData,
+  coreAreasOfService,
+  instructions,
+  notice,
+  service,
+} from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
 
 const Home: NextPageWithLayout = () => {
@@ -22,7 +25,7 @@ const Home: NextPageWithLayout = () => {
 
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
-  const cardRef:any = useRef();
+  const cardRef: any = useRef();
 
   const handleGetStarted = () => {
     if (cardRef && cardRef.current) {
@@ -37,7 +40,10 @@ const Home: NextPageWithLayout = () => {
     <>
       <Head>
         <title>Multivurse - Wealth Management Redefined</title>
-        <meta name="description" content="Multivurse - Wealth Management Redefined" />
+        <meta
+          name="description"
+          content="Multivurse - Wealth Management Redefined"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/fav.png" />
       </Head>
@@ -47,7 +53,14 @@ const Home: NextPageWithLayout = () => {
             isTabletOrMobile ? "px-8" : "px-28"
           }`}
         >
-          <Image height={100} width={100} src={"logo.png"} alt={"logo"} placeholder="blur" blurDataURL={"logo.png"}/>
+          <Image
+            height={100}
+            width={100}
+            src={"logo.png"}
+            alt={"logo"}
+            placeholder="blur"
+            blurDataURL={"logo.png"}
+          />
           <div>
             <Button
               variant={"primary"}
@@ -123,7 +136,10 @@ const Home: NextPageWithLayout = () => {
               })}
             </div>
           ) : (
-            <div  ref={ isDesktopOrLaptop ? cardRef : null} className="w-7/12 flex flex-row justify-around items-baseline mt-32">
+            <div
+              ref={isDesktopOrLaptop ? cardRef : null}
+              className="w-7/12 flex flex-row justify-around items-baseline mt-32"
+            >
               {instructions.map((val, index) => {
                 return (
                   <div className="flex flex-row items-center justify-start mb-4">
@@ -156,16 +172,42 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           {isTabletOrMobile ? (
-            <Card className={` ${isMobile ? "h-[600px]" : "h-[700px]"} w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}>
-              <div className={`h-full w-full  flex flex-col justify-between items-left ${isTabletOrMobile ? "mb-6" : isMobile ? "" : ""} z-0`}>
+            <Card
+              className={` ${
+                isMobile ? "h-[650px]" : "h-[750px]"
+              } w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
+            >
+              <div
+                className={`h-full w-full  flex flex-col justify-between items-left ${
+                  isTabletOrMobile ? "mb-6" : isMobile ? "" : ""
+                } z-0`}
+              >
                 <div className="w-full">
-                  <Card className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  mb-5 ${isTabletOrMobile ? " bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-900" : "bg-white drop-shadow-sm border border-indigo-500" }`}>
-                    <p className="text-white text-lg font-sans font-extrabold">
+                  <Card
+                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  mb-2 ${
+                      
+                         "bg-white shadow-lg border border-indigo-500"
+                    }`}
+                  >
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Clients
                     </p>
                   </Card>
-                  <Card className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  ${isTabletOrMobile ? " bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-900" : " bg-white drop-shadow-sm border border-indigo-500" }`}>
-                    <p className="text-white text-lg font-sans font-extrabold">
+                  <Card
+                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center mb-2  ${
+                       " bg-white shadow-lg border border-indigo-500"
+                    }`}
+                  >
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                      Professionals
+                    </p>
+                  </Card>
+                  <Card
+                    className={`h-[75px] w-full roundedXl flex flex-row justify-around items-center  ${
+                       " bg-white shadow-lg border border-indigo-500"
+                    }`}
+                  >
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Management
                     </p>
                   </Card>
@@ -174,7 +216,10 @@ const Home: NextPageWithLayout = () => {
               <video
                 className="rounded-xl"
                 height={"full"}
-                style={{ objectFit: "cover", height: isTabletOrMobile ? 450 : 400 }}
+                style={{
+                  objectFit: "cover",
+                  height: isTabletOrMobile ? 450 : 400,
+                }}
                 src={"couple.mp4"}
                 autoPlay={true}
                 muted={true}
@@ -189,19 +234,38 @@ const Home: NextPageWithLayout = () => {
             >
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full">
-                <a href="https://clients.multivurse.com/" target="_blank" rel="noopener noreferrer">
-                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                      Clients
-                    </p>
-                  </Card>
+                  <a
+                    href="https://clients.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                        Clients
+                      </p>
+                    </Card>
                   </a>
-                  <a href="https://management.multivurse.com/" target="_blank" rel="noopener noreferrer">
-                  <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                      Management
-                    </p>
-                  </Card>
+                  <a
+                    href="https://management.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                        Professionals
+                      </p>
+                    </Card>
+                  </a>
+                  <a
+                    href="https://management.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
+                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                        Management
+                      </p>
+                    </Card>
                   </a>
                 </div>
                 <div className="w-full">
@@ -230,7 +294,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[0px]" :  "mt-[100px]"
+            isMobile ? "mt-[0px]" : "mt-[100px]"
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
@@ -240,7 +304,7 @@ const Home: NextPageWithLayout = () => {
                 : "Core Areas of Service"}
             </p>
           </div>
-          <div className={ isDesktopOrLaptop ? "w-8/12" : "w-10/12"}>
+          <div className={isDesktopOrLaptop ? "w-8/12" : "w-10/12"}>
             <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
               {service}
             </p>

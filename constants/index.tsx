@@ -69,7 +69,7 @@ export const coreAreasOfService = [
   },
   {
     icon: <GraduationCap size={40} color={"#4F46E5"} />,
-    title: "Wealth Education",
+    title: "Learning Resources",
     subtitle:
       "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",
   },
