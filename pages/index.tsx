@@ -33,8 +33,9 @@ const Home: NextPageWithLayout = () => {
     }
   };
 
-  const firstHalf = coreAreasOfService.slice(0, 3);
-  const secondHalf = coreAreasOfService.slice(3, 6);
+  const firstSection = coreAreasOfService.slice(0, 3);
+  const secondSection = coreAreasOfService.slice(3, 6);
+  const thirdSection = coreAreasOfService.slice(6, 9);
 
   return (
     <>
@@ -183,6 +184,11 @@ const Home: NextPageWithLayout = () => {
                 } z-0`}
               >
                 <div className="w-full">
+                <a
+                    href="https://clients.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <Card
                     className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
@@ -190,6 +196,12 @@ const Home: NextPageWithLayout = () => {
                       Clients
                     </p>
                   </Card>
+                  </a>
+                  <a
+                    href="https://management.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <Card
                     className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
@@ -197,6 +209,12 @@ const Home: NextPageWithLayout = () => {
                       Professionals
                     </p>
                   </Card>
+                  </a>
+                  <a
+                    href="https://management.multivurse.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <Card
                     className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
                   >
@@ -204,6 +222,7 @@ const Home: NextPageWithLayout = () => {
                       Management
                     </p>
                   </Card>
+                  </a>
                 </div>
               </div>
               <video
@@ -308,7 +327,7 @@ const Home: NextPageWithLayout = () => {
             isDesktopOrLaptop ? "flex-row mb-10" : "flex-col"
           }`}
         >
-          {firstHalf.map((service, index) => (
+          {firstSection.map((service, index) => (
             <Card
               className={`bg-white h-[275px] ${
                 isDesktopOrLaptop ? "mr-4 w-80" : "mt-4 w-10/12"
@@ -324,11 +343,31 @@ const Home: NextPageWithLayout = () => {
           ))}
         </div>
         <div
-          className={`flex justify-center items-center w-full mb-20 bg-gray-50 ${
-            isDesktopOrLaptop ? "flex-row mt-10" : "flex-col"
+          className={`flex justify-center items-center w-full bg-gray-50 ${
+            isDesktopOrLaptop ? "flex-row mt-10 mb-10" : "flex-col"
           }`}
         >
-          {secondHalf.map((service, index) => (
+          {secondSection.map((service, index) => (
+            <Card
+              className={`bg-white h-[275px] ${
+                isDesktopOrLaptop ? "mr-4 w-80" : "mt-4 w-10/12"
+              }`}
+              key={index}
+            >
+              <Feature
+                icon={service.icon}
+                title={service.title}
+                subtitle={service.subtitle}
+              />
+            </Card>
+          ))}
+        </div>
+        <div
+          className={`flex justify-center items-center w-full mb-10 bg-gray-50 ${
+            isDesktopOrLaptop ? "flex-row" : "flex-col"
+          }`}
+        >
+          {thirdSection.map((service, index) => (
             <Card
               className={`bg-white h-[275px] ${
                 isDesktopOrLaptop ? "mr-4 w-80" : "mt-4 w-10/12"

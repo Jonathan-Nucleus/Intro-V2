@@ -1,4 +1,4 @@
-import { Coins, ChartPie, EggCrack, Gift, Files, GraduationCap } from "phosphor-react";
+import { Coins, ChartPie, EggCrack, Gift, Files, GraduationCap, Cards, FileDoc, Package } from "phosphor-react";
 
 export const accordionData = [
   {
@@ -55,6 +55,23 @@ export const coreAreasOfService = [
     title: "Risk Management",
     subtitle:
       "Identifying and mitigating potential financial risks by incorporating insurance and diversification strategies to protect clients' wealth and ensure financial stability.",
+  },
+  {
+    icon: <Cards size={40} color="#4F46E5" />,
+    title: "Account Management",
+    subtitle:
+      "Our comprehensive account management service includes seamless integration of multiple accounts, making it easy for clients to move capital between accounts and manage their investments efficiently.",
+  },
+  {
+    icon: <FileDoc size={40} color={"#4F46E5"} />,
+    title: "Document Repository",
+    subtitle: "Our secure digital document management system expedites paperwork and provides clients with a centralized location to store and access important documents. ",
+  },
+  {
+    icon: <Package size={40} color={"#4F46E5"} />,
+    title: "Investment Marketplace",
+    subtitle:
+      "Our investment marketplace offers a diverse range of funds and investment options, giving clients access to a variety of investment strategies to meet their financial goals.",
   },
   {
     icon: <Files size={40} color="#4F46E5" />,
