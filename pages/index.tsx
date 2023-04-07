@@ -198,7 +198,7 @@ const Home: NextPageWithLayout = () => {
                   </Card>
                   </a>
                   <a
-                    href="https://management.multivurse.com/"
+                    href="https://professionals.multivurse.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -258,7 +258,7 @@ const Home: NextPageWithLayout = () => {
                     </Card>
                   </a>
                   <a
-                    href="https://management.multivurse.com/"
+                    href="https://professionals.multivurse.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
