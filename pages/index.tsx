@@ -184,44 +184,44 @@ const Home: NextPageWithLayout = () => {
                 } z-0`}
               >
                 <div className="w-full">
-                <a
+                  <a
                     href="https://clients.multivurse.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <Card
-                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                  >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Clients
-                    </p>
-                  </Card>
+                    <Card
+                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
+                    >
+                      <p className="text-white text-lg font-sans font-bold">
+                        Clients
+                      </p>
+                    </Card>
                   </a>
                   <a
                     href="https://professionals.multivurse.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <Card
-                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                  >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Professionals
-                    </p>
-                  </Card>
+                    <Card
+                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
+                    >
+                      <p className="text-white text-lg font-sans font-bold">
+                        Professionals
+                      </p>
+                    </Card>
                   </a>
                   <a
                     href="https://management.multivurse.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <Card
-                    className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
-                  >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Management
-                    </p>
-                  </Card>
+                    <Card
+                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
+                    >
+                      <p className="text-white text-lg font-sans font-bold">
+                        Management
+                      </p>
+                    </Card>
                   </a>
                 </div>
               </div>
@@ -401,13 +401,19 @@ const Home: NextPageWithLayout = () => {
               onPressed={() => {}}
               bgColor={"red"}
             />
-            <CircularButton
-              icon={
-                <LinkedinLogo size={28} color={"#f3f4f6"} weight={"fill"} />
-              }
-              onPressed={() => {}}
-              bgColor={"red"}
-            />
+            <a
+              href="https://www.linkedin.com/company/multivurse/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CircularButton
+                icon={
+                  <LinkedinLogo size={28} color={"#f3f4f6"} weight={"fill"} />
+                }
+                onPressed={() => {}}
+                bgColor={"red"}
+              />
+            </a>
           </div>
           <p className="text-gray-500 text-sm font-sans">
             Multivurse Ⓒ 2023. All rights reserved
