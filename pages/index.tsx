@@ -396,11 +396,17 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="h-[150px] w-50 bg-gray-100 flex flex-col justify-center items-center">
           <div className="flex flex-row mb-4 w-40 justify-around px-6">
+          <a
+              href="https://twitter.com/multivurse_ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <CircularButton
               icon={<TwitterLogo size={25} color={"#f3f4f6"} weight={"fill"} />}
               onPressed={() => {}}
               bgColor={"red"}
             />
+            </a>
             <a
               href="https://www.linkedin.com/company/multivurse/"
               target="_blank"
