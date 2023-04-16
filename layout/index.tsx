@@ -3,8 +3,7 @@ import dynamic from "next/dynamic";
 import NextNProgress from "nextjs-progressbar";
 import { ToastContainer } from "react-toastify";
 import { AppPageProps } from "../types/next-page";
-import AuthLayout from "./AuthLayout";
-import HomeLayout from "./HomeLayout";
+import AuthLayout from "./LandingLayout";
 
 
 type RootLayoutProps = PropsWithChildren<AppPageProps>;
@@ -16,10 +15,7 @@ const RootLayout: FC<RootLayoutProps> = ({
   
   const appContent = (
     <>
-      {layout == "auth" && <AuthLayout>{children}</AuthLayout>}
-      {layout == "main" && (
-        <HomeLayout fullHeight={false}>{children}</HomeLayout>
-      )} 
+      {layout == "landing" && <AuthLayout>{children}</AuthLayout>}
       {layout == undefined && children}
     </>
   );

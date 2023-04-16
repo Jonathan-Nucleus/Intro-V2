@@ -430,6 +430,6 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.layout = "auth";
+Home.layout = "landing";
 
 export default Home;

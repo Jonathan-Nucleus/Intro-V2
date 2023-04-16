@@ -1,8 +1,7 @@
 import { NextPage } from "next";
 
 export interface AppPageProps {
-  layout?: "auth" | "main"
-  background?: "default" | "radial";
+  layout?: "landing" | "main"
 }
 
 export type NextPageWithLayout<P = {}> = NextPage<P> & AppPageProps;

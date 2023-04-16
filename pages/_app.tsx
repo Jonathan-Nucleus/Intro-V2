@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
      <ApolloProvider client={apolloclient}>
           <RootLayout
             layout={Component.layout}
-            background={Component.background}
           >
             <Component {...pageProps} />
           </RootLayout>
