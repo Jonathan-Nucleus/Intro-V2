@@ -10,6 +10,7 @@ import Feature from "../modules/feature";
 import Accordion from "../modules/accordion";
 import {
   accordionData,
+  blockchain,
   coreAreasOfService,
   instructions,
   notice,
@@ -311,12 +312,34 @@ const Home: NextPageWithLayout = () => {
         >
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
-              {isTabletOrMobile
-                ? "Core Areas of Service"
-                : "Core Areas of Service"}
+              Built on Enterprise Blockchain Technology
             </p>
           </div>
-          <div className={isDesktopOrLaptop ? "w-8/12" : "w-10/12"}>
+          <div className={`mb-[50px] ${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}>
+            <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
+              {blockchain}
+            </p>
+          </div>
+          <Image
+            height={ isMobile ? 250 : 400}
+            width={isMobile ? 250 : 400}
+            src={"blockchain.png"}
+            alt={"blockchain"}
+            placeholder="blur"
+            blurDataURL={"blockchain.png"}
+          />
+        </div>
+        <div
+          className={`flex flex-col justify-center items-center ${
+            isMobile ? "mt-[50px]" : "mt-[50px]"
+          }`}
+        >
+          <div className="flex flex-col justify-center items-center leading-tight">
+            <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
+              Core Areas of Service
+            </p>
+          </div>
+          <div className={`${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}>
             <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
               {service}
             </p>
@@ -396,16 +419,18 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="h-[150px] w-50 bg-gray-100 flex flex-col justify-center items-center">
           <div className="flex flex-row mb-4 w-40 justify-around px-6">
-          <a
+            <a
               href="https://twitter.com/multivurse_ai"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <CircularButton
-              icon={<TwitterLogo size={25} color={"#f3f4f6"} weight={"fill"} />}
-              onPressed={() => {}}
-              bgColor={"red"}
-            />
+              <CircularButton
+                icon={
+                  <TwitterLogo size={25} color={"#f3f4f6"} weight={"fill"} />
+                }
+                onPressed={() => {}}
+                bgColor={"red"}
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/multivurse/"

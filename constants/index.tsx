@@ -95,3 +95,5 @@ export const coreAreasOfService = [
 export const notice = "Dear valued customers, we would like to inform you that our service is currently under active development and will be available soon. Our team is working tirelessly to ensure that we provide you with the best possible service. We apologize for any inconvenience this may cause and appreciate your patience during this time. Rest assured that we are doing everything we can to make the service available to you as soon as possible."
 
 export const service = "Our wealth management as a service platform provides personalized investment strategies and comprehensive management, tailored to meet each client's unique financial goals."
+
+export const blockchain = "Built on Hyperledger Fabric blockchain technology, our platform offers a highly secure, fast, and scalable infrastructure solution for comprehensive wealth management services."
