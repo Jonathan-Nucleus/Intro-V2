@@ -14,7 +14,6 @@ const Accordion: FC<AccordionProps> = ({ title, content }) => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1000px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
   return (
     <Card className={`mb-4 bg-white drop-shadow-sm rounded-xl cursor-pointer ${isDesktopOrLaptop ? "w-8/12" : "w-10/12"}`}>
@@ -22,7 +21,7 @@ const Accordion: FC<AccordionProps> = ({ title, content }) => {
         className="min-h-20 rounded-xl flex flex-row items-center justify-between"
         onClick={() => setIsActive(!isActive)}
       >
-        <div className="text-lg font-normal">{title}</div>
+        <div className="text-lg font-semibold">{title}</div>
         <div>{isActive ? <CaretCircleUp size={25} /> : <CaretCircleDown size={25} />}</div>
       </div>
       {isActive && (

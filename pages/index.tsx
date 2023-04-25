@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { TwitterLogo, LinkedinLogo } from "phosphor-react";
+import { TwitterLogo, LinkedinLogo, GithubLogo } from "phosphor-react";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import CircularButton from "../components/Circular";
@@ -11,6 +11,7 @@ import Accordion from "../modules/accordion";
 import {
   accordionData,
   blockchain,
+  briefBio,
   coreAreasOfService,
   instructions,
   notice,
@@ -41,10 +42,10 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Multivurse - Wealth Management Redefined</title>
+        <title>Jonathan - Senior Fintech Engineer</title>
         <meta
           name="description"
-          content="Multivurse - Wealth Management Redefined"
+          content="Jonathan Daniels: Senior Fintech Engineer"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/fav.png" />
@@ -56,12 +57,13 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           <Image
-            height={100}
-            width={100}
-            src={"logo.png"}
+            height={50}
+            width={50}
+            className="rounded-full"
+            src={"jd.png"}
             alt={"logo"}
             placeholder="blur"
-            blurDataURL={"logo.png"}
+            blurDataURL={"jd.png"}
           />
           <div>
             <Button
@@ -70,7 +72,7 @@ const Home: NextPageWithLayout = () => {
               className={"bg-white h-10 rounded-xl w-[200px] text-gray-900"}
             >
               <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
-                Get Started
+                Jonathan Daniels
               </p>
             </Button>
           </div>
@@ -83,11 +85,11 @@ const Home: NextPageWithLayout = () => {
           <Button
             variant={"primary"}
             className={`bg-transparent h-10 rounded-xl ${
-              isTabletOrMobile ? "mb-10" : "mb-2"
+              isTabletOrMobile ? "mb-10 w-10/12" : "mb-2 w-full"
             }`}
           >
             <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans">
-              Empowering 2,904 clients with our innovative solutions
+              Empowered 25+ Companies with my Expertise
             </p>
           </Button>
           <div className="flex flex-col justify-center items-center leading-tight">
@@ -96,72 +98,25 @@ const Home: NextPageWithLayout = () => {
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
-              Wealth Management
+              Senior Fintech
             </p>
             <p
               className={`text-white font-sans font-extrabold mb-8 ${
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
-              {isTabletOrMobile ? "Redefined" : "Redefined"}
+              Engineer
             </p>
           </div>
-          <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-6/12"}>
+          <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-5/12"}>
             <p
-              className={`text-zinc-400 text-[18px] font-sans font-normal ${
-                isTabletOrMobile ? "text-center" : "text-center"
+              className={`text-zinc-400 font-sans font-normal ${
+                isTabletOrMobile ? "text-justify text-[15px]" : "text-justify text-[16px]"
               }`}
             >
-              Maximize Wealth, Minimize Effort: Streamlined Wealth Management
-              for Tomorrow
+              {briefBio}
             </p>
           </div>
-          {isTabletOrMobile ? (
-            <div className="mt-16">
-              {instructions.map((val, index) => {
-                return (
-                  <div className="flex flex-row items-center justify-start mb-4">
-                    <CircularButton
-                      icon={
-                        <p className="text-white font-bold text-md">
-                          {index + 1}
-                        </p>
-                      }
-                      onPressed={() => {}}
-                      bgColor={"red"}
-                    />
-                    <p className="text-zinc-200 text-md font-sans ml-4">
-                      {val}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <div
-              ref={isDesktopOrLaptop ? cardRef : null}
-              className="w-7/12 flex flex-row justify-around items-baseline mt-32"
-            >
-              {instructions.map((val, index) => {
-                return (
-                  <div className="flex flex-row items-center justify-start mb-4">
-                    <CircularButton
-                      icon={
-                        <p className="text-white font-bold text-md">
-                          {index + 1}
-                        </p>
-                      }
-                      onPressed={() => {}}
-                      bgColor={"red"}
-                    />
-                    <p className="text-zinc-200 text-md font-sans ml-4">
-                      {val}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          )}
         </div>
         <div
           ref={isTabletOrMobile ? cardRef : null}
@@ -315,13 +270,15 @@ const Home: NextPageWithLayout = () => {
               Built on Enterprise Blockchain Technology
             </p>
           </div>
-          <div className={`mb-[50px] ${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}>
+          <div
+            className={`mb-[50px] ${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}
+          >
             <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
               {blockchain}
             </p>
           </div>
           <Image
-            height={ isMobile ? 250 : 400}
+            height={isMobile ? 250 : 400}
             width={isMobile ? 250 : 400}
             src={"blockchain.png"}
             alt={"blockchain"}
@@ -336,7 +293,7 @@ const Home: NextPageWithLayout = () => {
         >
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
-              Core Areas of Service
+              Projects Portfolio
             </p>
           </div>
           <div className={`${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}>
@@ -408,7 +365,7 @@ const Home: NextPageWithLayout = () => {
         <div className="flex flex-col mt-30 justify-center items-center bg-gray-50">
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-4">
-              {isTabletOrMobile ? "FAQs" : "Frequently Asked Questions"}
+              {isTabletOrMobile ? "Summary" : "Brief Summary"}
             </p>
           </div>
         </div>
@@ -417,8 +374,34 @@ const Home: NextPageWithLayout = () => {
             <Accordion title={title} content={content} key={title} />
           ))}
         </div>
-        <div className="h-[150px] w-50 bg-gray-100 flex flex-col justify-center items-center">
-          <div className="flex flex-row mb-4 w-40 justify-around px-6">
+        <div className="h-[150px] w-full bg-gray-100 flex flex-col justify-center items-center">
+          <div className={`flex flex-row mb-4 w-[250px] justify-around px-6`}>
+            <a
+              href="https://github.com/Jonathan-Multivurse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CircularButton
+                icon={
+                  <GithubLogo size={25} color={"#f3f4f6"} weight={"fill"} />
+                }
+                onPressed={() => {}}
+                bgColor={"red"}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/j2daniels/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CircularButton
+                icon={
+                  <LinkedinLogo size={28} color={"#f3f4f6"} weight={"fill"} />
+                }
+                onPressed={() => {}}
+                bgColor={"red"}
+              />
+            </a>
             <a
               href="https://twitter.com/multivurse_ai"
               target="_blank"
@@ -427,19 +410,6 @@ const Home: NextPageWithLayout = () => {
               <CircularButton
                 icon={
                   <TwitterLogo size={25} color={"#f3f4f6"} weight={"fill"} />
-                }
-                onPressed={() => {}}
-                bgColor={"red"}
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/multivurse/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CircularButton
-                icon={
-                  <LinkedinLogo size={28} color={"#f3f4f6"} weight={"fill"} />
                 }
                 onPressed={() => {}}
                 bgColor={"red"}

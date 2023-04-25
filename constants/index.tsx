@@ -2,33 +2,20 @@ import { Coins, ChartPie, EggCrack, Gift, Files, GraduationCap, Cards, FileDoc, 
 
 export const accordionData = [
   {
-    title: 'What is Multivurse?',
-    content: `Multivurse is a wealth management software product that provides a comprehensive and integrated solution for managing your wealth. It combines advanced technology with expert financial advice to help you achieve your financial goals. With Multivurse, you can track your investments, analyze your portfolio, and get personalized investment recommendations based on your risk tolerance and investment objectives.`
+    title: 'What I do as a Fintech Engineer',
+    content: `As a Fintech Engineer, my primary role is to develop and implement cutting-edge financial technology solutions that streamline financial services and improve the user experience. I specialize in creating software and applications designed to enhance the accessibility and functionality of banking, investment, and payment platforms. By leveraging emerging technologies like blockchain, machine learning, and artificial intelligence, I aim to revolutionize the way individuals and businesses manage their finances, ensuring that our digital economy thrives while remaining secure and efficient.`
   },
   {
-    title: 'How does Multivurse work?',
-    content: `Multivurse works by analyzing your financial data to provide you with personalized investment recommendations. It uses sophisticated algorithms to identify the best investment opportunities based on your risk tolerance, investment goals, and time horizon. You can also track your portfolio performance, access detailed reports, and get expert financial advice from a dedicated team of advisors. With Multivurse, you have all the tools you need to manage your wealth in one place.`
+    title: 'What Drives my passion for this work ',
+    content: `I am passionate about Fintech Engineering because it offers the opportunity to make a meaningful impact on the financial landscape of people's lives. By optimizing the way financial services are delivered, I can help make these services more inclusive and accessible to a broader audience. This not only promotes financial literacy and empowerment but also fosters economic growth and innovation. I firmly believe that technology has the potential to address the financial challenges faced by many, and I am committed to harnessing its power to shape a brighter future for everyone.`
   },
   {
-    title: 'What are the benefits of using Multivurse?',
-    content: `Multivurse offers a range of benefits, including: 
-    - Personalized investment recommendations based on your risk tolerance and investment goals
-    - Access to expert financial advice from a dedicated team of advisors
-    - Comprehensive portfolio management tools, including performance tracking and detailed reports
-    - Integration with your existing financial accounts for a complete view of your wealth
-    - Secure, reliable, and convenient access to your financial data anytime, anywhere.`
+    title: 'What\'s Behind My Fintech Engineering Success',
+    content: `In order to excel as a Fintech Engineer, I employ a systematic approach to problem-solving, utilizing Agile methodologies, and adhering to best practices in software development. This involves working closely with cross-functional teams, including business analysts, product managers, and designers, to ensure that the end product aligns with the needs of the users and stakeholders. Additionally, I constantly update my skillset and stay abreast of industry trends to ensure that I am always at the forefront of innovation and able to deliver the most advanced and effective financial solutions.`
   },
   {
-    title: 'What is the cost for using Multivurse?',
-    content: `The cost of using Multivurse depends on the specific features and services you require. Our pricing is transparent and based on a subscription model, so you only pay for what you need. Please contact us for more information on pricing and to discuss your specific wealth management needs.`
-  },
-  {
-    title: 'Is my financial data secure with Multivurse?',
-    content: `Yes, we take the security of your financial data very seriously. Multivurse uses industry-standard encryption and security protocols to protect your data from unauthorized access. We also comply with all relevant data privacy regulations and best practices to ensure that your data is safe and secure.`
-  },
-  {
-    title: 'Can I try Multivurse before I buy it?',
-    content: `Yes, we offer a free trial of Multivurse so you can try it before you buy it. Please contact us to learn more about our free trial and to get started.`
+    title: 'Who has benefited from it',
+    content: `My work as a Fintech Engineer has benefited numerous individuals and organizations, including banks, startups, and financial service providers. By implementing more user-friendly and secure platforms, these entities have been able to attract and retain customers while reducing operational costs. Moreover, my efforts have facilitated financial inclusion for underbanked and unbanked populations, empowering them with access to essential financial services and products. Ultimately, my work as a Fintech Engineer has made a tangible difference in people's lives, contributing to a more equitable and prosperous society.`
   }
 ];
 
@@ -97,3 +84,5 @@ export const notice = "Dear valued customers, we would like to inform you that o
 export const service = "Our wealth management as a service platform provides personalized investment strategies and comprehensive management, tailored to meet each client's unique financial goals."
 
 export const blockchain = "Built on Hyperledger Fabric blockchain technology, our platform offers a highly secure, fast, and scalable infrastructure solution for comprehensive wealth management services."
+
+export const briefBio = "Jonathan is a seasoned Senior Full Stack Web-Mobile, Blockchain and Machine Learning Engineer, who possesses a genuine passion for the ever-evolving world of Computer Science and Financial Technologies. He has acquired a comprehensive educational background, encompassing a variety of disciplines ranging from Business, Economics, Software Development to Data Science, and has earned esteemed credentials from leading institutions across South Korea, Canada and the United States."

@@ -2,8 +2,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import RootLayout from "../layout";
 import { NextPageWithLayout } from "../types/next-page";
-import { ApolloProvider } from "@apollo/client";
-import apolloclient from "../assistants/apolloclient";
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
@@ -12,13 +10,9 @@ type AppPropsWithLayout = AppProps & {
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
-     <ApolloProvider client={apolloclient}>
-          <RootLayout
-            layout={Component.layout}
-          >
-            <Component {...pageProps} />
-          </RootLayout>
-      </ApolloProvider>
+      <RootLayout layout={Component.layout}>
+        <Component {...pageProps} />
+      </RootLayout>
     </>
   );
 }
