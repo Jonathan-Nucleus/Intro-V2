@@ -13,11 +13,11 @@ import {
   blockchain,
   briefBio,
   coreAreasOfService,
-  instructions,
-  notice,
   service,
+  shortInfo,
 } from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
+import HeadlessTab from "../components/HeadlessTab";
 
 const Home: NextPageWithLayout = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -111,7 +111,9 @@ const Home: NextPageWithLayout = () => {
           <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-5/12"}>
             <p
               className={`text-zinc-400 font-sans font-normal ${
-                isTabletOrMobile ? "text-justify text-[15px]" : "text-justify text-[16px]"
+                isTabletOrMobile
+                  ? "text-justify text-[15px]"
+                  : "text-justify text-[16px]"
               }`}
             >
               {briefBio}
@@ -207,9 +209,9 @@ const Home: NextPageWithLayout = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
                       <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Clients
+                        Web & Mobile
                       </p>
                     </Card>
                   </a>
@@ -218,9 +220,9 @@ const Home: NextPageWithLayout = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
                       <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Professionals
+                        Blockchain
                       </p>
                     </Card>
                   </a>
@@ -229,19 +231,19 @@ const Home: NextPageWithLayout = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Card className="h-[100px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
                       <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Management
+                        Machine Learning
                       </p>
                     </Card>
                   </a>
                 </div>
                 <div className="w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
-                    Notice
+                    Core Technologies
                   </p>
-                  <p className="text-gray-800 text-md font-sans text-justify">
-                    {notice}
+                  <p className="text-gray-800 text-md font-sans text-justify mb-6">
+                    {shortInfo}
                   </p>
                 </div>
               </div>
@@ -267,7 +269,7 @@ const Home: NextPageWithLayout = () => {
         >
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
-              Built on Enterprise Blockchain Technology
+              Technical Expertise
             </p>
           </div>
           <div
@@ -277,13 +279,9 @@ const Home: NextPageWithLayout = () => {
               {blockchain}
             </p>
           </div>
-          <Image
-            height={isMobile ? 250 : 400}
-            width={isMobile ? 250 : 400}
-            src={"blockchain.png"}
-            alt={"blockchain"}
-            placeholder="blur"
-            blurDataURL={"blockchain.png"}
+          <HeadlessTab
+            tabTitles={["Web & Mobile", "Blockchain", isDesktopOrLaptop ? "Machine Learning" : "ML"]}
+            content={[<div className="h-[400px]">1111</div>, <div className="h-[400px]">2222</div>, <div className="h-[400px]">3333</div>]}
           />
         </div>
         <div
@@ -364,8 +362,8 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="flex flex-col mt-30 justify-center items-center bg-gray-50">
           <div className="flex flex-col justify-center items-center leading-tight">
-            <p className="text-black text-[30px] font-sans font-extrabold mb-4">
-              {isTabletOrMobile ? "Summary" : "Brief Summary"}
+            <p className="text-black text-[30px] font-sans font-extrabold mt-4 mb-2">
+              {"In a Nutshell"}
             </p>
           </div>
         </div>

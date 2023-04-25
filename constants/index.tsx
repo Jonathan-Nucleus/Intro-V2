@@ -79,7 +79,7 @@ export const coreAreasOfService = [
   },
 ];
 
-export const notice = "Dear valued customers, we would like to inform you that our service is currently under active development and will be available soon. Our team is working tirelessly to ensure that we provide you with the best possible service. We apologize for any inconvenience this may cause and appreciate your patience during this time. Rest assured that we are doing everything we can to make the service available to you as soon as possible."
+export const shortInfo = "As a proficient fintech software engineer, I have cultivated expertise in web and mobile development, blockchain technology, and machine learning. My skills in crafting custom, cross-platform applications blend functionality and aesthetics, while my knowledge of blockchain allows me to design and implement smart contracts and optimize distributed ledger systems. Additionally, my expertise in machine learning empowers me to harness data-driven insights for financial institutions, enabling informed decision-making and process optimization. Altogether, my comprehensive skillset positions me at the forefront of innovation, driving success for businesses in a constantly evolving digital landscape."
 
 export const service = "Our wealth management as a service platform provides personalized investment strategies and comprehensive management, tailored to meet each client's unique financial goals."
 
