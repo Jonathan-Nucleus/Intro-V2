@@ -123,79 +123,49 @@ const Home: NextPageWithLayout = () => {
         <div
           ref={isTabletOrMobile ? cardRef : null}
           className={`w-100 bg-gray-50 flex justify-center items-center relative ${
-            isTabletOrMobile
-              ? "h-[750px]"
-              : isTabletOrMobile
-              ? "h-[250px]"
-              : "h-[600px]"
+            isTabletOrMobile || isMobile ? "h-[750px]" : "h-[600px]"
           }`}
         >
           {isTabletOrMobile ? (
             <Card
               className={` ${
-                isMobile ? "h-[650px]" : "h-[750px]"
+                isMobile || isTabletOrMobile ? "h-full" : "h-[750px]"
               } w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
             >
               <div
                 className={`h-full w-full  flex flex-col justify-between items-left ${
-                  isTabletOrMobile ? "mb-6" : isMobile ? "" : ""
+                  isTabletOrMobile ? "mb-6" : isMobile ? "pt-4" : ""
                 } z-0`}
               >
                 <div className="w-full">
-                  <a
-                    href="https://clients.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Card
+                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <Card
-                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                    >
-                      <p className="text-white text-lg font-sans font-bold">
-                        Clients
-                      </p>
-                    </Card>
-                  </a>
-                  <a
-                    href="https://professionals.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <p className="text-white text-lg font-sans font-bold">
+                      Web & Mobile
+                    </p>
+                  </Card>
+
+                  <Card
+                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <Card
-                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                    >
-                      <p className="text-white text-lg font-sans font-bold">
-                        Professionals
-                      </p>
-                    </Card>
-                  </a>
-                  <a
-                    href="https://management.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <p className="text-white text-lg font-sans font-bold">
+                      Blockchain
+                    </p>
+                  </Card>
+
+                  <Card
+                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
                   >
-                    <Card
-                      className={`h-[75px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
-                    >
-                      <p className="text-white text-lg font-sans font-bold">
-                        Management
-                      </p>
-                    </Card>
-                  </a>
+                    <p className="text-white text-lg font-sans font-bold">
+                      Machine Learning
+                    </p>
+                  </Card>
                 </div>
               </div>
-              <video
-                className="rounded-xl"
-                height={"full"}
-                style={{
-                  objectFit: "cover",
-                  height: isTabletOrMobile ? 450 : 400,
-                }}
-                src={"couple.mp4"}
-                autoPlay={true}
-                muted={true}
-                loop={true}
-                playsInline
-              />
+              <p className="text-gray-800 text-md font-sans text-justify mb-6">
+                {shortInfo}
+              </p>
             </Card>
           ) : (
             <Card
@@ -204,39 +174,23 @@ const Home: NextPageWithLayout = () => {
             >
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full">
-                  <a
-                    href="https://clients.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Web & Mobile
-                      </p>
-                    </Card>
-                  </a>
-                  <a
-                    href="https://professionals.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Blockchain
-                      </p>
-                    </Card>
-                  </a>
-                  <a
-                    href="https://management.multivurse.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
-                      <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                        Machine Learning
-                      </p>
-                    </Card>
-                  </a>
+                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                      Web & Mobile
+                    </p>
+                  </Card>
+
+                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                      Blockchain
+                    </p>
+                  </Card>
+
+                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
+                      Machine Learning
+                    </p>
+                  </Card>
                 </div>
                 <div className="w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
@@ -264,7 +218,30 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[0px]" : "mt-[100px]"
+            isMobile ? "mt-[100px]" : "mt-[100px]"
+          }`}
+        >
+          <div className="flex flex-col justify-center items-center leading-tight">
+            <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
+              Video Intro
+            </p>
+          </div>
+
+          <div className="h-[400px] w-10/12 bg-transparent flex rounded-3xl justify-center items-center">
+            <video
+              className="rounded-xl"
+              height={"full"}
+              style={{ objectFit: "cover", height: 400, width: isMobile? 400 : 700 }}
+              src={"couple.mp4"}
+              autoPlay={true}
+              muted={true}
+              loop={true}
+            />
+          </div>
+        </div>
+        <div
+          className={`flex flex-col justify-center items-center ${
+            isMobile ? "mt-[100px]" : "mt-[100px]"
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
@@ -280,8 +257,17 @@ const Home: NextPageWithLayout = () => {
             </p>
           </div>
           <HeadlessTab
-            tabTitles={["Web & Mobile", "Blockchain", isDesktopOrLaptop ? "Machine Learning" : "ML"]}
-            content={[<div className="h-[400px]">1111</div>, <div className="h-[400px]">2222</div>, <div className="h-[400px]">3333</div>]}
+            tabTitles={[
+              "Web & Mobile",
+              "Blockchain",
+              isDesktopOrLaptop ? "Machine Learning" : "ML",
+            ]}
+            content={[
+              <div className="h-[400px]">1111</div>,
+              <div className="h-[400px]">2222</div>,
+              <div className="h-[400px]">3333</div>,
+            ]}
+            
           />
         </div>
         <div

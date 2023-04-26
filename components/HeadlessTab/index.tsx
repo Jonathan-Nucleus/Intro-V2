@@ -26,7 +26,7 @@ const HeadlessTab: FC<TabsComponentProps> = ({ tabTitles, content }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
   return (
-    <div className={`px-2 py-16 sm:px-0 ${ isMobile ? "w-11/12" : "w-8/12"}`}>
+    <div className={`px-2 py-16 sm:px-0 ${ isMobile ? "w-11/12" : isTabletOrMobile ? "w-10/12" : "w-8/12"}`}>
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
           {tabTitles.map((title, idx) => (
