@@ -21,11 +21,11 @@ const Accordion: FC<AccordionProps> = ({ title, content }) => {
         className="min-h-20 rounded-xl flex flex-row items-center justify-between"
         onClick={() => setIsActive(!isActive)}
       >
-        <div className="text-lg font-semibold">{title}</div>
-        <div>{isActive ? <CaretCircleUp size={25} /> : <CaretCircleDown size={25} />}</div>
+        <div className="text-lg text-black font-semibold">{title}</div>
+        <div>{isActive ? <CaretCircleUp size={25} color="#000" /> : <CaretCircleDown size={25} color="#000" />}</div>
       </div>
       {isActive && (
-        <div className="mt-4 animate__animated animate__fadeIn">{content}</div>
+        <div className="mt-4 animate__animated animate__fadeIn text-black">{content}</div>
       )}
     </Card>
   );

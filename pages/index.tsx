@@ -130,7 +130,7 @@ const Home: NextPageWithLayout = () => {
             <Card
               className={` ${
                 isMobile || isTabletOrMobile ? "h-full" : "h-[750px]"
-              } w-10/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
+              } w-11/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
             >
               <div
                 className={`h-full w-full  flex flex-col justify-between items-left ${
@@ -202,46 +202,40 @@ const Home: NextPageWithLayout = () => {
                 </div>
               </div>
 
-              <div className="h-[650px] w-6/12 bg-gray-100 flex rounded-3xl justify-center items-center">
-                <video
-                  className="rounded-xl"
-                  height={"full"}
-                  style={{ objectFit: "cover", height: 660 }}
-                  src={"couple.mp4"}
-                  autoPlay={true}
-                  muted={true}
-                  loop={true}
-                />
-              </div>
+              <Image
+                height={350}
+                width={550}
+                className="rounded-3xl"
+                src={"jonathan.png"}
+                alt={"jonathan"}
+                placeholder="blur"
+                blurDataURL={"jonathan.png"}
+              />
             </Card>
           )}
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[100px]" : "mt-[100px]"
+            isMobile ? "mt-[100px]" : "mt-[0px]"
           }`}
         >
-          <div className="flex flex-col justify-center items-center leading-tight">
-            <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
-              Video Intro
-            </p>
-          </div>
-
-          <div className="h-[400px] w-10/12 bg-transparent flex rounded-3xl justify-center items-center">
-            <video
-              className="rounded-xl"
-              height={"full"}
-              style={{ objectFit: "cover", height: 400, width: isMobile? 400 : 700 }}
-              src={"couple.mp4"}
-              autoPlay={true}
-              muted={true}
-              loop={true}
-            />
-          </div>
+          {isMobile ? (
+            <div className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center">
+              <Image
+                height={400}
+                width={500}
+                className="rounded-xl"
+                src={"jonathan.png"}
+                alt={"jonathan"}
+                placeholder="blur"
+                blurDataURL={"jonathan.png"}
+              />
+            </div>
+          ) : null}
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[100px]" : "mt-[100px]"
+            isMobile ? "mt-[100px]" : "mt-[0px]"
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
@@ -263,11 +257,10 @@ const Home: NextPageWithLayout = () => {
               isDesktopOrLaptop ? "Machine Learning" : "ML",
             ]}
             content={[
-              <div className="h-[400px]">1111</div>,
-              <div className="h-[400px]">2222</div>,
-              <div className="h-[400px]">3333</div>,
+              <div className="h-[600px]">1111</div>,
+              <div className="h-[600px]">2222</div>,
+              <div className="h-[600px]">3333</div>,
             ]}
-            
           />
         </div>
         <div

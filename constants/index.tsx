@@ -27,52 +27,52 @@ export const instructions = [
 
 export const coreAreasOfService = [
   {
-    icon: <Coins size={40} color={"#4F46E5"} />,
+    icon: <Coins size={35} color={"#4F46E5"} />,
     title: "Financial Planning",
     subtitle: "Comprehensive financial plans that helps clients assess their financial situation, set realistic goals, and develop strategies to achieve those objectives",
   },
   {
-    icon: <ChartPie size={40} color="#4F46E5" />,
+    icon: <ChartPie size={35} color="#4F46E5" />,
     title: "Portfolio Management",
     subtitle:
       "Designing and managing investment portfolios that align with clients' financial goals, risk tolerance, and time horizon by selecting and balancing a mix of different assets.",
   },
   {
-    icon: <EggCrack size={40} color={"#4F46E5"} />,
+    icon: <EggCrack size={35} color={"#4F46E5"} />,
     title: "Risk Management",
     subtitle:
       "Identifying and mitigating potential financial risks by incorporating insurance and diversification strategies to protect clients' wealth and ensure financial stability.",
   },
   {
-    icon: <Cards size={40} color="#4F46E5" />,
+    icon: <Cards size={35} color="#4F46E5" />,
     title: "Account Management",
     subtitle:
       "Our comprehensive account management service includes seamless integration of multiple accounts, making it easy for clients to move capital between accounts and manage their investments efficiently.",
   },
   {
-    icon: <FileDoc size={40} color={"#4F46E5"} />,
+    icon: <FileDoc size={35} color={"#4F46E5"} />,
     title: "Document Repository",
     subtitle: "Our secure digital document management system expedites paperwork and provides clients with a centralized location to store and access important documents. ",
   },
   {
-    icon: <Package size={40} color={"#4F46E5"} />,
+    icon: <Package size={35} color={"#4F46E5"} />,
     title: "Investment Marketplace",
     subtitle:
       "Our investment marketplace offers a diverse range of funds and investment options, giving clients access to a variety of investment strategies to meet their financial goals.",
   },
   {
-    icon: <Files size={40} color="#4F46E5" />,
+    icon: <Files size={35} color="#4F46E5" />,
     title: "Tax Planning",
     subtitle:
       "Developing and executing tax strategies to optimize clients' tax positions by identifying deductions, credits, and deferrals, while staying up-to-date with the latest tax laws and regulations.",
   },
   {
-    icon: <Gift size={40} color={"#4F46E5"} />,
+    icon: <Gift size={35} color={"#4F46E5"} />,
     title: "Estate & Legacy Planning",
     subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
   },
   {
-    icon: <GraduationCap size={40} color={"#4F46E5"} />,
+    icon: <GraduationCap size={35} color={"#4F46E5"} />,
     title: "Learning Resources",
     subtitle:
       "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",
