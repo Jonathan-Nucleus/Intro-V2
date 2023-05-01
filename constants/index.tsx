@@ -27,52 +27,52 @@ export const instructions = [
 
 export const coreAreasOfService = [
   {
-    icon: <Coins size={35} color={"#4F46E5"} />,
-    title: "Financial Planning",
-    subtitle: "Comprehensive financial plans that helps clients assess their financial situation, set realistic goals, and develop strategies to achieve those objectives",
+    link: "https://prometheusalts.com/",
+    title: "Prometheus",
+    subtitle: "Connect, discover, and transact on an alternative investment platform. Direct access to hedge funds, private credit, venture capital, and more, vetted by our internal due diligence team",
   },
   {
-    icon: <ChartPie size={35} color="#4F46E5" />,
-    title: "Portfolio Management",
+    link: "https://goosefx.io/",
+    title: "GooseFX",
     subtitle:
-      "Designing and managing investment portfolios that align with clients' financial goals, risk tolerance, and time horizon by selecting and balancing a mix of different assets.",
+      "A full suite DeFi platform to trade crypto, derivatives, NFTs, and single sided liquidity pools with yield farming. Kick back and enjoy DeFi as it should be.",
   },
   {
-    icon: <EggCrack size={35} color={"#4F46E5"} />,
-    title: "Risk Management",
+    link: "https://reitium.com/",
+    title: "Reitium",
     subtitle:
-      "Identifying and mitigating potential financial risks by incorporating insurance and diversification strategies to protect clients' wealth and ensure financial stability.",
+      "REITIUM Crowdfunding (REITIUM.fund) is a crowdfunding marketplace that showcases private equity real estate deals available to all types of Canadian investors",
   },
   {
-    icon: <Cards size={35} color="#4F46E5" />,
-    title: "Account Management",
+    link: "https://rubix.io/",
+    title: "Rubix",
     subtitle:
-      "Our comprehensive account management service includes seamless integration of multiple accounts, making it easy for clients to move capital between accounts and manage their investments efficiently.",
+      "A better way to trade and exchange cryptocurrency. Rubix provides a faster, more secure way to buy, sell, and trade crypto.",
   },
   {
-    icon: <FileDoc size={35} color={"#4F46E5"} />,
-    title: "Document Repository",
-    subtitle: "Our secure digital document management system expedites paperwork and provides clients with a centralized location to store and access important documents. ",
+    link: "https://www.withlean.com/",
+    title: "Lean",
+    subtitle: " reimagining financial products for the reimagined workforce. Give your flex workforce the benefits that matter most, improve retention, and create new revenue streams. ",
   },
   {
-    icon: <Package size={35} color={"#4F46E5"} />,
-    title: "Investment Marketplace",
+    link: "https://founderpath.com/",
+    title: "Founderpath",
     subtitle:
-      "Our investment marketplace offers a diverse range of funds and investment options, giving clients access to a variety of investment strategies to meet their financial goals.",
+      "Where Bootstrapped SaaS Founders Get Capital. Where bootstrapped SaaS founders come to turn MRR into upfront cash. Use the money to grow without selling equity.",
   },
   {
-    icon: <Files size={35} color="#4F46E5" />,
+    link: "https://prometheusalts.com/",
     title: "Tax Planning",
     subtitle:
       "Developing and executing tax strategies to optimize clients' tax positions by identifying deductions, credits, and deferrals, while staying up-to-date with the latest tax laws and regulations.",
   },
   {
-    icon: <Gift size={35} color={"#4F46E5"} />,
+    link: "https://prometheusalts.com/",
     title: "Estate & Legacy Planning",
     subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
   },
   {
-    icon: <GraduationCap size={35} color={"#4F46E5"} />,
+    link: "https://prometheusalts.com/",
     title: "Learning Resources",
     subtitle:
       "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",

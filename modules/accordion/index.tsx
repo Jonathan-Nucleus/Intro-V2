@@ -10,7 +10,7 @@ interface AccordionProps {
 }
 
 const Accordion: FC<AccordionProps> = ({ title, content }) => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1000px)",
   });

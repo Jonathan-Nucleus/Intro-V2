@@ -292,7 +292,7 @@ const Home: NextPageWithLayout = () => {
               key={index}
             >
               <Feature
-                icon={service.icon}
+                link={service.link}
                 title={service.title}
                 subtitle={service.subtitle}
               />
@@ -312,7 +312,7 @@ const Home: NextPageWithLayout = () => {
               key={index}
             >
               <Feature
-                icon={service.icon}
+                link={service.link}
                 title={service.title}
                 subtitle={service.subtitle}
               />
@@ -332,7 +332,7 @@ const Home: NextPageWithLayout = () => {
               key={index}
             >
               <Feature
-                icon={service.icon}
+                link={service.link}
                 title={service.title}
                 subtitle={service.subtitle}
               />
