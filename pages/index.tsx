@@ -28,10 +28,17 @@ const Home: NextPageWithLayout = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
   const cardRef: any = useRef();
+  const skillRef: any = useRef();
 
   const handleGetStarted = () => {
     if (cardRef && cardRef.current) {
       cardRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleSkills = () => {
+    if (skillRef && skillRef.current) {
+      skillRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -119,9 +126,9 @@ const Home: NextPageWithLayout = () => {
               {briefBio}
             </p>
           </div>
+          <div ref={isDesktopOrLaptop ? cardRef : null}></div>
         </div>
         <div
-          ref={isTabletOrMobile ? cardRef : null}
           className={`w-100 bg-gray-50 flex justify-center items-center relative ${
             isTabletOrMobile || isMobile ? "h-[750px]" : "h-[600px]"
           }`}
@@ -137,9 +144,10 @@ const Home: NextPageWithLayout = () => {
                   isTabletOrMobile ? "mb-6" : isMobile ? "pt-4" : ""
                 } z-0`}
               >
-                <div className="w-full">
+                <div className="w-full"  onClick={handleSkills}>
                   <Card
                     className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
+                   
                   >
                     <p className="text-white text-lg font-sans font-bold">
                       Web & Mobile
@@ -169,11 +177,10 @@ const Home: NextPageWithLayout = () => {
             </Card>
           ) : (
             <Card
-              ref={cardRef}
               className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0"
             >
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
-                <div className="w-full">
+                <div className="w-full" onClick={handleSkills}>
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
                     <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
                       Web & Mobile
@@ -220,7 +227,7 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           {isMobile ? (
-            <div className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center">
+            <div className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"  ref={isTabletOrMobile ? cardRef : null}>
               <Image
                 height={400}
                 width={500}
@@ -237,6 +244,7 @@ const Home: NextPageWithLayout = () => {
           className={`flex flex-col justify-center items-center ${
             isMobile ? "mt-[100px]" : "mt-[0px]"
           }`}
+          ref={skillRef}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
             <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">

@@ -61,21 +61,21 @@ export const coreAreasOfService = [
       "Where Bootstrapped SaaS Founders Get Capital. Where bootstrapped SaaS founders come to turn MRR into upfront cash. Use the money to grow without selling equity.",
   },
   {
-    link: "https://prometheusalts.com/",
-    title: "Tax Planning",
+    link: "https://realbuy.io/",
+    title: "Realbuy",
     subtitle:
-      "Developing and executing tax strategies to optimize clients' tax positions by identifying deductions, credits, and deferrals, while staying up-to-date with the latest tax laws and regulations.",
+      "The investment opportunity of large-scale investment institutions, Now available to anyone. Easily own a stake in a Commercial realestate properties through realbuy.",
   },
   {
-    link: "https://prometheusalts.com/",
-    title: "Estate & Legacy Planning",
-    subtitle: "Assistance with wills, trusts, power of attorney, and tax-efficient strategies to ensure clients' assets are managed and distributed according to their wishes",
+    link: "https://apexfintechsolutions.com/",
+    title: "Apex",
+    subtitle: "Whether you need a platform or a plug-and-play solution, Apex can help you get from a big fintech idea to a bold, world-changing reality. We’re advancing the frontier of what’s possible for a wide variety of clients.",
   },
   {
-    link: "https://prometheusalts.com/",
-    title: "Learning Resources",
+    link: "https://www.optimus.tech/",
+    title: "Optimus",
     subtitle:
-      "Empowering clients with knowledge and resources to make informed decisions about their finances, fostering a sense of control and confidence in their financial future.",
+      "The new-age back-office of fintech & retail, Optimus aggregates, monitors, and reconciles payment data across the full lifecycle of money movement.",
   },
 ];
 
