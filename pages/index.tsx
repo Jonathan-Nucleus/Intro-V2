@@ -144,10 +144,9 @@ const Home: NextPageWithLayout = () => {
                   isTabletOrMobile ? "mb-6" : isMobile ? "pt-4" : ""
                 } z-0`}
               >
-                <div className="w-full"  onClick={handleSkills}>
+                <div className="w-full" onClick={handleSkills}>
                   <Card
                     className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                   
                   >
                     <p className="text-white text-lg font-sans font-bold">
                       Web & Mobile
@@ -176,9 +175,7 @@ const Home: NextPageWithLayout = () => {
               </p>
             </Card>
           ) : (
-            <Card
-              className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0"
-            >
+            <Card className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full" onClick={handleSkills}>
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
@@ -227,7 +224,10 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           {isMobile ? (
-            <div className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"  ref={isTabletOrMobile ? cardRef : null}>
+            <div
+              className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"
+              ref={isTabletOrMobile ? cardRef : null}
+            >
               <Image
                 height={400}
                 width={500}
@@ -265,9 +265,303 @@ const Home: NextPageWithLayout = () => {
               isDesktopOrLaptop ? "Machine Learning" : "ML",
             ]}
             content={[
-              <div className="h-[600px]">1111</div>,
-              <div className="h-[600px]">2222</div>,
-              <div className="h-[600px]">3333</div>,
+              <div className="h-[600px]">
+                {isDesktopOrLaptop ? (
+                  <div className="flex flx-row h-full w-full">
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Front End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          React
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          React Native
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Flutter
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          JavaScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          TypeScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Dart
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Backend End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          Nodejs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Python
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          NoSQL DBs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GraphQL
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Containers
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Cloud Functions
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Platform
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          AWS
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GCP
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Azure
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Firebase
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Amplify
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Apollo
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col h-full w-full">
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Front End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Backend End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Platform
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>,
+              <div className="h-[600px]">
+                {isDesktopOrLaptop ? (
+                  <div className="flex flx-row h-full w-full">
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Front End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          React
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          React Native
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Flutter
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          JavaScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          TypeScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Dart
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Backend End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          Nodejs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Python
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          NoSQL DBs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GraphQL
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Containers
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Cloud Functions
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Platform
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          AWS
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GCP
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Azure
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Firebase
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Amplify
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Apollo
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col h-full w-full">
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Front End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Backend End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Platform
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>,
+              <div className="h-[600px]">
+                {isDesktopOrLaptop ? (
+                  <div className="flex flx-row h-full w-full">
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Front End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          React
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          React Native
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Flutter
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          JavaScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          TypeScript
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Dart
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Backend End
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          Nodejs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Python
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          NoSQL DBs
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GraphQL
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Containers
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Cloud Functions
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full w-4/12">
+                      <div className="flex h-10 justify-center items-center w-full shadow-sm">
+                        Platform
+                      </div>
+                      <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+                        <Button variant={"outline-primary"} className="w-full">
+                          AWS
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          GCP
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Azure
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Firebase
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Amplify
+                        </Button>
+                        <Button variant={"outline-primary"} className="w-full">
+                          Apollo
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col h-full w-full">
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Front End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Backend End
+                      </div>
+                    </div>
+                    <div className="flex flex-row h-full w-full">
+                      <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+                        Platform
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>,
             ]}
           />
         </div>
@@ -388,7 +682,7 @@ const Home: NextPageWithLayout = () => {
               />
             </a>
             <a
-              href="https://twitter.com/multivurse_ai"
+              href="https://twitter.com/jonathanvurse"
               target="_blank"
               rel="noopener noreferrer"
             >
