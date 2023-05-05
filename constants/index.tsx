@@ -79,10 +79,10 @@ export const coreAreasOfService = [
   },
 ];
 
-export const shortInfo = "As a proficient fintech software engineer, I have cultivated expertise in web and mobile development, blockchain technology, and machine learning. My skills in crafting custom, cross-platform applications blend functionality and aesthetics, while my knowledge of blockchain allows me to design and implement smart contracts and optimize distributed ledger systems. Additionally, my expertise in machine learning empowers me to harness data-driven insights for financial institutions, enabling informed decision-making and process optimization. Altogether, my comprehensive skillset positions me at the forefront of innovation, driving success for businesses in a constantly evolving digital landscape."
+export const shortInfo = "I'm a skilled fintech software engineer with expertise in web/mobile development, blockchain, and AI. I create custom, cross-platform applications that blend functionality and aesthetics, design smart contracts, build enterprise distributed ledger systems, and harness data-driven insights for financial institutions. My skillset positions me at the forefront of innovation, driving success for businesses in a constantly evolving digital landscape."
 
-export const service = "Our wealth management as a service platform provides personalized investment strategies and comprehensive management, tailored to meet each client's unique financial goals."
+export const portfolio = "A FinTech Innovator with an Impressive Portfolio of Diverse Projects in Multiple Financial Domains."
 
-export const blockchain = "Built on Hyperledger Fabric blockchain technology, our platform offers a highly secure, fast, and scalable infrastructure solution for comprehensive wealth management services."
+export const expertise = "A Diverse Technologist with Expertise in Web & Mobile Development, Blockchain, and Artificial Intelligence."
 
 export const briefBio = "Jonathan is a seasoned Senior Full Stack Web-Mobile, Blockchain and Machine Learning Engineer, who possesses a genuine passion for the ever-evolving world of Computer Science and Financial Technologies. He has acquired a comprehensive educational background, encompassing a variety of disciplines ranging from Business, Economics, Software Development to Data Science, and has earned esteemed credentials from leading institutions across South Korea, Canada and the United States."

@@ -2,7 +2,7 @@ import { FC } from "react";
 import Button from "../../components/Button";
 import { useMediaQuery } from "react-responsive";
 
-const Blockchain: FC = () => {
+const AI: FC = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
   return (
@@ -11,17 +11,17 @@ const Blockchain: FC = () => {
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
             <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
-              Smart Contracts
+              Data Science
             </div>
           </div>
           <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
             <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
-              Dev Tools
+              Machine Learning
             </div>
           </div>
           <div className="flex flex-row h-full w-full">
             <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
-              Platform
+              Generative AI
             </div>
           </div>
         </div>
@@ -29,55 +29,67 @@ const Blockchain: FC = () => {
         <div className="flex flx-row h-full w-full">
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
             <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Smart Contracts
+              Data Science
             </div>
             <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Solidity
+                DataBricks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Truffle
+                SQL
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Remix
+                NumPy
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Pandas
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Matplotlib
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Koalas
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Scrapy
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
             <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Dev Tools
+              Machine Learning
             </div>
             <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                IPFS
+                Scikit
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Metamask
+                Keras
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Moralis
+                PyTorch
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Chainlink
+                TenserFlow
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Kaleido
+                VertexAI
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                AWS Managed Blockchain
+                Sagemaker
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12">
             <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Platform
+              Generative AI
             </div>
             <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Ethereum
+                OpenAI
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Hyperledger Fabric
+                GPT-4
               </Button>
             </div>
           </div>
@@ -87,4 +99,4 @@ const Blockchain: FC = () => {
   );
 };
 
-export default Blockchain;
+export default AI;

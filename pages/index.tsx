@@ -10,16 +10,17 @@ import Feature from "../modules/feature";
 import Accordion from "../modules/accordion";
 import {
   accordionData,
-  blockchain,
   briefBio,
   coreAreasOfService,
-  service,
+  expertise,
+  portfolio,
   shortInfo,
 } from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
 import HeadlessTab from "../components/HeadlessTab";
 import WebMobile from "../modules/webmobile";
 import Blockchain from "../modules/blockchain";
+import AI from "../modules/ai";
 
 const Home: NextPageWithLayout = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -138,8 +139,8 @@ const Home: NextPageWithLayout = () => {
           {isTabletOrMobile ? (
             <Card
               className={` ${
-                isMobile || isTabletOrMobile ? "h-full" : "h-[750px]"
-              } w-11/12 roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
+                isMobile ? "w-11/12" : "w-10/12"
+              } h-[550px] roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
             >
               <div
                 className={`h-full w-full  flex flex-col justify-between items-left ${
@@ -177,7 +178,7 @@ const Home: NextPageWithLayout = () => {
               </p>
             </Card>
           ) : (
-            <Card className="h-[700px] w-10/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
+            <Card className="h-[600px] w-8/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full" onClick={handleSkills}>
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
@@ -210,8 +211,8 @@ const Home: NextPageWithLayout = () => {
 
               <Image
                 height={350}
-                width={550}
-                className="rounded-3xl"
+                width={500}
+                className="rounded-xl"
                 src={"jonathan.png"}
                 alt={"jonathan"}
                 placeholder="blur"
@@ -227,7 +228,7 @@ const Home: NextPageWithLayout = () => {
         >
           {isMobile ? (
             <div
-              className="h-[400px] mt-10  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"
+              className="h-[400px]  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"
               ref={isTabletOrMobile ? cardRef : null}
             >
               <Image
@@ -249,22 +250,22 @@ const Home: NextPageWithLayout = () => {
           ref={skillRef}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
-            <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
+            <p className="text-black text-[30px] font-sans font-extrabold mt-10 mb-4 text-center">
               Technical Expertise
             </p>
           </div>
           <div
-            className={`mb-[50px] ${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}
+            className={`mb-[25px] ${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}
           >
             <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
-              {blockchain}
+              {expertise}
             </p>
           </div>
           <HeadlessTab
             tabTitles={[
               "Web & Mobile",
               "Blockchain",
-              isDesktopOrLaptop ? "Machine Learning" : "ML",
+              isDesktopOrLaptop ? "Artificial Intelligence" : "AI",
             ]}
             content={[
               <div className="h-[600px]">
@@ -274,7 +275,7 @@ const Home: NextPageWithLayout = () => {
                 <Blockchain />
               </div>,
               <div className="h-[600px]">
-                <WebMobile />
+                <AI />
               </div>,
             ]}
           />
@@ -285,13 +286,13 @@ const Home: NextPageWithLayout = () => {
           }`}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
-            <p className="text-black text-[30px] font-sans font-extrabold mb-8 text-center">
+            <p className="text-black text-[30px] font-sans font-extrabold mb-4 text-center">
               Projects Portfolio
             </p>
           </div>
           <div className={`${isDesktopOrLaptop ? "w-7/12" : "w-11/12"}`}>
             <p className="text-zinc-500 text-[16px] font-sans font-normal text-center">
-              {service}
+              {portfolio}
             </p>
           </div>
         </div>
