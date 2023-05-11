@@ -9,19 +9,58 @@ const Blockchain: FC = () => {
     <>
       {isMobile ? (
         <div className="flex flex-col h-full w-full">
-          <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
-            <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+          <div className="flex flex-col h-full w-full">
+            <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
               Smart Contracts
             </div>
-          </div>
-          <div className="flex flex-row h-full w-full border-b border-[#4F46E5]">
-            <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
-              Dev Tools
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
+              <Button variant={"outline-primary"} className="w-full">
+                Solidity
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Truffle
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Remix
+              </Button>
             </div>
           </div>
-          <div className="flex flex-row h-full w-full">
-            <div className="flex h-4/12 justify-center items-center w-3/12 shadow-md">
+          <div className="flex flex-col h-full w-full">
+            <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+              Dev Tools
+            </div>
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
+              <Button variant={"outline-primary"} className="w-full">
+                IPFS
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Metamask
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Moralis
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Chainlink
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Kaleido
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                AWS Managed Blockchain
+              </Button>
+            </div>
+          </div>
+          <div className="flex flex-col h-full w-full">
+            <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
               Platform
+            </div>
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
+              <Button variant={"outline-primary"} className="w-full">
+                Ethereum
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Hyperledger Fabric
+              </Button>
             </div>
           </div>
         </div>

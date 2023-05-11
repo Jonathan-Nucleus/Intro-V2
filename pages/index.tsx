@@ -61,35 +61,37 @@ const Home: NextPageWithLayout = () => {
         <link rel="icon" href="/fav.png" />
       </Head>
       <main className="h-100 w-100 bg-gray-50">
-        <div
-          className={`h-28 bg-black flex flex-row justify-between items-center ${
-            isTabletOrMobile ? "px-8" : "px-28"
-          }`}
-        >
-          <Image
-            height={50}
-            width={50}
-            className="rounded-full"
-            src={"jd.png"}
-            alt={"logo"}
-            placeholder="blur"
-            blurDataURL={"jd.png"}
-          />
-          <div>
-            <Button
-              variant={"primary"}
-              onClick={handleGetStarted}
-              className={"bg-white h-10 rounded-xl w-[200px] text-gray-900"}
-            >
-              <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
-                Jonathan Daniels
-              </p>
-            </Button>
+        <div className={`h-28 w-full bg-black flex justify-center`}>
+          <div
+            className={`flex flex-row ${
+              isMobile ? "w-11/12" : "w-8/12"
+            } justify-between items-center`}
+          >
+            <Image
+              height={50}
+              width={50}
+              className="rounded-full"
+              src={"jd.png"}
+              alt={"logo"}
+              placeholder="blur"
+              blurDataURL={"jd.png"}
+            />
+            <div>
+              <Button
+                variant={"primary"}
+                onClick={handleGetStarted}
+                className={"bg-white h-10 rounded-xl w-[200px] text-gray-900"}
+              >
+                <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
+                  Jonathan Daniels
+                </p>
+              </Button>
+            </div>
           </div>
         </div>
         <div
-          className={`h-[800px] w-100 bg-black flex flex-col justify-start items-center pt-20 ${
-            isTabletOrMobile ? "h-[700px]" : "h-[800px]"
+          className={`w-100 bg-black flex flex-col justify-start items-center pt-20 ${
+            isTabletOrMobile ? "h-[800px]" : "h-[800px]"
           }`}
         >
           <Button
@@ -118,7 +120,7 @@ const Home: NextPageWithLayout = () => {
               Engineer
             </p>
           </div>
-          <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-5/12"}>
+          <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-6/12"}>
             <p
               className={`text-zinc-400 font-sans font-normal ${
                 isTabletOrMobile
@@ -129,11 +131,67 @@ const Home: NextPageWithLayout = () => {
               {briefBio}
             </p>
           </div>
+          <div
+            className={`flex ${
+              isTabletOrMobile
+                ? "flex-col h-full w-11/12 items-center justify-center"
+                : "flex-row w-6/12 justify-between items-center mt-14"
+            }`}
+          >
+            <a
+              href="https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=71a8dda6-21cc-4c68-a4e0-fa5cbd27b8d6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant={"outline-primary"}
+                className={
+                  `border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${isTabletOrMobile ? "mb-2" : ""}`
+                }
+              >
+                <p className="text-white text-sm font-sans font-bold">
+                  Resume File
+                </p>
+              </Button>
+            </a>
+            <a
+              href="https://multivurse.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant={"outline-primary"}
+                className={
+                  `border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${isTabletOrMobile ? "mb-2" : ""}`
+                }
+              >
+                <p className="text-white text-sm font-sans font-bold">
+                  Latest Project
+                </p>
+              </Button>
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~0144e39f7980edb847"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant={"outline-primary"}
+                className={
+                  "border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"
+                }
+              >
+                <p className="text-white text-sm font-sans font-bold">
+                  Freelance Work
+                </p>
+              </Button>
+            </a>
+          </div>
           <div ref={isDesktopOrLaptop ? cardRef : null}></div>
         </div>
         <div
           className={`w-100 bg-gray-50 flex justify-center items-center relative ${
-            isTabletOrMobile || isMobile ? "h-[750px]" : "h-[600px]"
+            isTabletOrMobile || isMobile ? "h-[650px]" : "h-[600px]"
           }`}
         >
           {isTabletOrMobile ? (
@@ -223,7 +281,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[100px]" : "mt-[0px]"
+            isMobile ? "mt-[0px]" : "mt-[0px]"
           }`}
         >
           {isMobile ? (
@@ -245,7 +303,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[100px]" : "mt-[0px]"
+            isMobile ? "mt-[0px]" : "mt-[0px]"
           }`}
           ref={skillRef}
         >
@@ -268,13 +326,13 @@ const Home: NextPageWithLayout = () => {
               isDesktopOrLaptop ? "Artificial Intelligence" : "AI",
             ]}
             content={[
-              <div className="h-[600px]">
+              <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>
                 <WebMobile />
               </div>,
-              <div className="h-[600px]">
+              <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>
                 <Blockchain />
               </div>,
-              <div className="h-[600px]">
+              <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>
                 <AI />
               </div>,
             ]}
