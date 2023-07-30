@@ -21,6 +21,8 @@ import HeadlessTab from "../components/HeadlessTab";
 import WebMobile from "../modules/webmobile";
 import Blockchain from "../modules/blockchain";
 import AI from "../modules/ai";
+import Lottie from "lottie-react";
+import animationData from "../public/landingai.json";
 
 const Home: NextPageWithLayout = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -52,10 +54,10 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Jonathan - Senior Fintech Engineer</title>
+        <title>Jonathan Daniels</title>
         <meta
           name="description"
-          content="Jonathan Daniels: Senior Fintech Engineer"
+          content="Senior Artificial Intelligence Engineer - Vancouver, Canada"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/fav.png" />
@@ -110,7 +112,7 @@ const Home: NextPageWithLayout = () => {
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
-              Senior Fintech
+              Artificial Intelligence
             </p>
             <p
               className={`text-white font-sans font-extrabold mb-8 ${
@@ -120,22 +122,24 @@ const Home: NextPageWithLayout = () => {
               Engineer
             </p>
           </div>
-          <div className={isTabletOrMobile ? "w-10/12 mt-6" : "w-6/12"}>
-            <p
-              className={`text-zinc-400 font-sans font-normal ${
-                isTabletOrMobile
-                  ? "text-justify text-[15px]"
-                  : "text-justify text-[16px]"
-              }`}
+         
+            <div
+              className={` ${
+                isDesktopOrLaptop ? "w-6/12" : "w-9/12"
+              } h-20 w-60 flex justify-center items-center mt-24 mb-2 rounded-full`}
             >
-              {briefBio}
-            </p>
-          </div>
+              <Lottie
+                animationData={animationData}
+                loop={true}
+                autoplay={true}
+              />
+            </div>
+    
           <div
             className={`flex ${
               isTabletOrMobile
                 ? "flex-col h-full w-11/12 items-center justify-center"
-                : "flex-row w-6/12 justify-between items-center mt-14"
+                : "flex-row w-6/12 justify-between items-center mt-32"
             }`}
           >
             <a
@@ -145,9 +149,9 @@ const Home: NextPageWithLayout = () => {
             >
               <Button
                 variant={"outline-primary"}
-                className={
-                  `border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${isTabletOrMobile ? "mb-2" : ""}`
-                }
+                className={`border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${
+                  isTabletOrMobile ? "mb-2" : ""
+                }`}
               >
                 <p className="text-white text-sm font-sans font-bold">
                   Resume File
@@ -161,9 +165,9 @@ const Home: NextPageWithLayout = () => {
             >
               <Button
                 variant={"outline-primary"}
-                className={
-                  `border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${isTabletOrMobile ? "mb-2" : ""}`
-                }
+                className={`border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${
+                  isTabletOrMobile ? "mb-2" : ""
+                }`}
               >
                 <p className="text-white text-sm font-sans font-bold">
                   Latest Project
@@ -209,24 +213,24 @@ const Home: NextPageWithLayout = () => {
                   <Card
                     className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Web & Mobile
+                    <p className="text-white text-lg font-sans font-semibold">
+                      Design & Architecture
                     </p>
                   </Card>
 
                   <Card
                     className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
                   >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Blockchain
+                    <p className="text-white text-lg font-sans font-semibold">
+                      Building & Maintenance
                     </p>
                   </Card>
 
                   <Card
                     className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
                   >
-                    <p className="text-white text-lg font-sans font-bold">
-                      Machine Learning
+                    <p className="text-white text-lg font-sans font-semibold">
+                      Deployment & Integration
                     </p>
                   </Card>
                 </div>
@@ -240,20 +244,20 @@ const Home: NextPageWithLayout = () => {
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full" onClick={handleSkills}>
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                      Web & Mobile
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
+                      Design & Architecture
                     </p>
                   </Card>
 
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                      Blockchain
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
+                      Building & Maintenance
                     </p>
                   </Card>
 
                   <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-extrabold">
-                      Machine Learning
+                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
+                      Deployment & Integration
                     </p>
                   </Card>
                 </div>
@@ -321,9 +325,9 @@ const Home: NextPageWithLayout = () => {
           </div>
           <HeadlessTab
             tabTitles={[
-              "Web & Mobile",
-              "Blockchain",
-              isDesktopOrLaptop ? "Artificial Intelligence" : "AI",
+              isDesktopOrLaptop ? "Design & Architecture" : "Design",
+              isDesktopOrLaptop ? "Building & Maintenance" : "Build",
+              isDesktopOrLaptop ? "Deployment & Integration" : "Launch",
             ]}
             content={[
               <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>

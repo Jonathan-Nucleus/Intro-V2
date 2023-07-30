@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "jonathanfintech",
+    "site": "site-360ad",
     "public": "out",
     "ignore": [
       "firebase.json",
