@@ -83,7 +83,7 @@ export const safetycommitment = "The ever-evolving study of artificial intellige
 
 export const areaofinterest = "My areas of interest encompass a focused range of cutting-edge domains, including Deep Neural Networks, Computer Vision, Language Models, Autonomous Systems, Quantum ML, Knowledge Representation, as well as Planning and Decision Making Systems. My passion lies in exploring and advancing innovation and solve complex challenges at the forefront of AI technology."
 
-export const portfolio = "A FinTech Innovator with an Impressive Portfolio of Diverse Projects in Multiple Financial Domains."
+export const portfolio = "A Machine Learning Innovator with an Impressive Portfolio of Diverse Projects in Multiple Domains of Industry."
 
 export const expertise = "I possess extensive experience across three core segments: Design, Development and Deployment."
 
