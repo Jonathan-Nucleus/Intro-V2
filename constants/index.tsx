@@ -2,20 +2,20 @@ import { Coins, ChartPie, EggCrack, Gift, Files, GraduationCap, Cards, FileDoc, 
 
 export const accordionData = [
   {
-    title: 'What I do as a Fintech Engineer',
-    content: `As a Fintech Engineer, my primary role is to develop and implement cutting-edge financial technology solutions that streamline financial services and improve the user experience. I specialize in creating software and applications designed to enhance the accessibility and functionality of banking, investment, and payment platforms. By leveraging emerging technologies like blockchain, machine learning, and artificial intelligence, I aim to revolutionize the way individuals and businesses manage their finances, ensuring that our digital economy thrives while remaining secure and efficient.`
+    title: 'What I do as an AI Engineer',
+    content: `As an AI Engineer, my primary role is to develop and implement cutting-edge artificial intelligence solutions that solve complex problems and enhance various industries. I specialize in creating algorithms, models, and applications designed to leverage the power of AI and machine learning. By utilizing advanced techniques, I strive to create intelligent systems that automate tasks, make predictions, and provide valuable insights. My work spans across domains such as natural language processing, computer vision, and data analysis, contributing to the advancement of technology and its integration into our daily lives.`
   },
   {
-    title: 'What Drives my passion for this work ',
-    content: `I am passionate about Fintech Engineering because it offers the opportunity to make a meaningful impact on the financial landscape of people's lives. By optimizing the way financial services are delivered, I can help make these services more inclusive and accessible to a broader audience. This not only promotes financial literacy and empowerment but also fosters economic growth and innovation. I firmly believe that technology has the potential to address the financial challenges faced by many, and I am committed to harnessing its power to shape a brighter future for everyone.`
+    title: 'What Drives my passion for this work',
+    content: `I am passionate about AI Engineering because it allows me to be at the forefront of innovation and drive transformational change. AI has the potential to revolutionize industries, improve efficiency, and create entirely new possibilities. By pushing the boundaries of what's possible with technology, I can contribute to solving challenges that were once deemed insurmountable. Witnessing how AI can enhance decision-making, improve healthcare, optimize logistics, and more, fuels my dedication to crafting a future where intelligent machines work in harmony with human potential.`
   },
   {
-    title: 'What\'s Behind My Fintech Engineering Success',
-    content: `In order to excel as a Fintech Engineer, I employ a systematic approach to problem-solving, utilizing Agile methodologies, and adhering to best practices in software development. This involves working closely with cross-functional teams, including business analysts, product managers, and designers, to ensure that the end product aligns with the needs of the users and stakeholders. Additionally, I constantly update my skillset and stay abreast of industry trends to ensure that I am always at the forefront of innovation and able to deliver the most advanced and effective financial solutions.`
+    title: 'What\'s Behind My AI Engineering Success',
+    content: `To excel as an AI Engineer, I adopt a rigorous problem-solving approach, employing agile methodologies and adhering to best practices in software development. Collaboration with cross-functional teams, including data scientists, domain experts, and designers, is crucial to ensure that the AI solutions align with user needs and business goals. Continuously updating my skills and staying current with the ever-evolving AI landscape is essential to remain innovative. By staying curious and embracing challenges, I strive to create AI systems that drive real-world impact and inspire positive change.`
   },
   {
     title: 'Who has benefited from it',
-    content: `My work as a Fintech Engineer has benefited numerous individuals and organizations, including banks, startups, and financial service providers. By implementing more user-friendly and secure platforms, these entities have been able to attract and retain customers while reducing operational costs. Moreover, my efforts have facilitated financial inclusion for underbanked and unbanked populations, empowering them with access to essential financial services and products. Ultimately, my work as a Fintech Engineer has made a tangible difference in people's lives, contributing to a more equitable and prosperous society.`
+    content: `My work as an AI Engineer has benefited a wide range of individuals and industries, including healthcare, finance, education, and more. By implementing AI solutions, businesses have improved efficiency, made data-driven decisions, and unlocked new revenue streams. In healthcare, AI-powered diagnostics and treatments have led to better patient outcomes. Additionally, my efforts contribute to research and exploration in fields like space exploration, climate modeling, and genetics. Ultimately, my role as an AI Engineer has contributed to a smarter, more interconnected world, driving progress and improving the quality of life for many.`
   }
 ];
 
@@ -79,7 +79,9 @@ export const coreAreasOfService = [
   },
 ];
 
-export const shortInfo = "I'm a skilled fintech software engineer with expertise in web/mobile development, blockchain, and AI. I create custom, cross-platform applications that blend functionality and aesthetics, design smart contracts, build enterprise distributed ledger systems, and harness data-driven insights for financial institutions. My skillset positions me at the forefront of innovation, driving success for businesses in a constantly evolving digital landscape."
+export const safetycommitment = "The ever-evolving realm of artificial intelligence holds immense potential, but with it comes an intrinsic responsibility to ensure its ethical and secure development. We are ardently committed to fostering AI systems that are not only advanced but also accountable, transparent, and devoid of biases. Our objective is to usher in an era where AI serves humanity constructively, respects human rights, and operates without causing harm"
+
+export const areaofinterest = "My areas of interest in AI engineering encompass a focused range of cutting-edge domains, including Neural Networks, Computer Vision, NLP, Autonomous Systems, Knowledge Representation, and Planning and Decision Making. My passion lies in exploring and advancing these facets of AI to drive innovation and solve complex challenges at the forefront of technology."
 
 export const portfolio = "A FinTech Innovator with an Impressive Portfolio of Diverse Projects in Multiple Financial Domains."
 

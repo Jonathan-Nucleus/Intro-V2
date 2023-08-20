@@ -10,11 +10,12 @@ import Feature from "../modules/feature";
 import Accordion from "../modules/accordion";
 import {
   accordionData,
+  areaofinterest,
   briefBio,
   coreAreasOfService,
   expertise,
   portfolio,
-  shortInfo,
+  safetycommitment,
 } from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
 import HeadlessTab from "../components/HeadlessTab";
@@ -63,7 +64,7 @@ const Home: NextPageWithLayout = () => {
         <link rel="icon" href="/fav.png" />
       </Head>
       <main className="h-100 w-100 bg-gray-50">
-        <div className={`h-28 w-full bg-black flex justify-center`}>
+        <div className={`h-28 w-full bg-gray-50 flex justify-center`}>
           <div
             className={`flex flex-row ${
               isMobile ? "w-11/12" : "w-8/12"
@@ -80,11 +81,11 @@ const Home: NextPageWithLayout = () => {
             />
             <div>
               <Button
-                variant={"primary"}
+                variant={"outline-primary"}
                 onClick={handleGetStarted}
-                className={"bg-white h-10 rounded-xl w-[200px] text-gray-900"}
+                className={"bg-transparent border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"}
               >
-                <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans font-bold">
+                <p className="text-[#4F46E5] font-sans font-bold">
                   Jonathan Daniels
                 </p>
               </Button>
@@ -92,7 +93,7 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
         <div
-          className={`w-100 bg-black flex flex-col justify-start items-center pt-20 ${
+          className={`w-100 bg-gray-50 flex flex-col justify-start items-center pt-20 ${
             isTabletOrMobile ? "h-[800px]" : "h-[800px]"
           }`}
         >
@@ -103,19 +104,19 @@ const Home: NextPageWithLayout = () => {
             }`}
           >
             <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans">
-              Empowered 25+ Companies with my Expertise
+              Empowering 25+ Companies and Counting
             </p>
           </Button>
           <div className="flex flex-col justify-center items-center leading-tight">
             <p
-              className={`text-white font-sans font-extrabold ${
+              className={`text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 font-sans font-extrabold ${
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
               Artificial Intelligence
             </p>
             <p
-              className={`text-white font-sans font-extrabold mb-8 ${
+              className={`text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 font-sans font-extrabold mb-8 ${
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
@@ -126,7 +127,7 @@ const Home: NextPageWithLayout = () => {
             <div
               className={` ${
                 isDesktopOrLaptop ? "w-6/12" : "w-9/12"
-              } h-20 w-60 flex justify-center items-center mt-24 mb-2 rounded-full`}
+              } h-20 w-80 flex justify-center items-center mt-24 mb-2 rounded-full`}
             >
               <Lottie
                 animationData={animationData}
@@ -139,7 +140,7 @@ const Home: NextPageWithLayout = () => {
             className={`flex ${
               isTabletOrMobile
                 ? "flex-col h-full w-11/12 items-center justify-center"
-                : "flex-row w-6/12 justify-between items-center mt-32"
+                : "flex-row w-8/12 justify-between items-center mt-32 px-4"
             }`}
           >
             <a
@@ -153,13 +154,13 @@ const Home: NextPageWithLayout = () => {
                   isTabletOrMobile ? "mb-2" : ""
                 }`}
               >
-                <p className="text-white text-sm font-sans font-bold">
+                <p className="text-[#4F46E5] text-sm font-sans font-bold">
                   Resume File
                 </p>
               </Button>
             </a>
             <a
-              href="https://multivurse.com/"
+              href="https://breathing.ai/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -169,7 +170,7 @@ const Home: NextPageWithLayout = () => {
                   isTabletOrMobile ? "mb-2" : ""
                 }`}
               >
-                <p className="text-white text-sm font-sans font-bold">
+                <p className="text-[#4F46E5] text-sm font-sans font-bold">
                   Latest Project
                 </p>
               </Button>
@@ -185,8 +186,24 @@ const Home: NextPageWithLayout = () => {
                   "border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"
                 }
               >
-                <p className="text-white text-sm font-sans font-bold">
+                <p className="text-[#4F46E5] text-sm font-sans font-bold">
                   Freelance Work
+                </p>
+              </Button>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/nextmindsai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant={"outline-primary"}
+                className={
+                  "border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"
+                }
+              >
+                <p className="text-[#4F46E5] text-sm font-sans font-bold">
+                  AI Lab
                 </p>
               </Button>
             </a>
@@ -236,37 +253,29 @@ const Home: NextPageWithLayout = () => {
                 </div>
               </div>
               <p className="text-gray-800 text-md font-sans text-justify mb-6">
-                {shortInfo}
+                {areaofinterest}
               </p>
             </Card>
           ) : (
-            <Card className="h-[600px] w-8/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[100px] z-0">
+            <Card className="h-[600px] w-8/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[50px] z-0">
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="w-full" onClick={handleSkills}>
-                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
-                      Design & Architecture
-                    </p>
-                  </Card>
-
-                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white mb-5 drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
-                      Building & Maintenance
-                    </p>
-                  </Card>
-
-                  <Card className="h-[80px] w-full roundedXl flex flex-row justify-around items-center bg-white drop-shadow-sm border border-indigo-500 cursor-pointer">
-                    <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-lg font-sans font-semibold">
-                      Deployment & Integration
-                    </p>
-                  </Card>
+                  
                 </div>
                 <div className="w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
-                    Core Technologies
+                    Commitment to Safe AI Development
                   </p>
                   <p className="text-gray-800 text-md font-sans text-justify mb-6">
-                    {shortInfo}
+                    {safetycommitment}
+                  </p>
+                </div>
+                <div className="w-full">
+                  <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
+                    Areas of Interest
+                  </p>
+                  <p className="text-gray-800 text-md font-sans text-justify mb-6">
+                    {areaofinterest}
                   </p>
                 </div>
               </div>
@@ -430,7 +439,7 @@ const Home: NextPageWithLayout = () => {
             <Accordion title={title} content={content} key={title} />
           ))}
         </div>
-        <div className="h-[150px] w-full bg-gray-100 flex flex-col justify-center items-center">
+        <div className="h-[150px] w-full bg-white flex flex-col justify-center items-center">
           <div className={`flex flex-row mb-4 w-[250px] justify-around px-6`}>
             <a
               href="https://github.com/Jonathan-Multivurse"
