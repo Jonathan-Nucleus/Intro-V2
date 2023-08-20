@@ -181,9 +181,9 @@ const Home: NextPageWithLayout = () => {
             >
               <Button
                 variant={"outline-primary"}
-                className={
-                  "border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"
-                }
+                className={`border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900 ${
+                  isTabletOrMobile ? "mb-2" : ""
+                }`}
               >
                 <p className="text-[#4F46E5] text-sm font-sans font-bold">
                   Freelance Work
@@ -218,7 +218,7 @@ const Home: NextPageWithLayout = () => {
             <Card
               className={` ${
                 isMobile ? "w-11/12" : "w-10/12"
-              } h-[550px] roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
+              } h-[650px] roundedXl flex flex-col justify-around items-left bg-white absolute top-[50px] z-0`}
             >
               <div
                 className={`h-full w-full  flex flex-col justify-between items-left ${
@@ -278,7 +278,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center ${
-            isMobile ? "mt-[0px]" : "mt-[0px]"
+            isMobile ? "mt-[100px]" : "mt-[0px]"
           }`}
         >
           {isMobile ? (

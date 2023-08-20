@@ -143,6 +143,9 @@ const Development: FC = () => {
                 Tenserflow
               </Button>
               <Button variant={"outline-primary"} className="w-full">
+                DataBricks
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
                 Sagemaker
               </Button>
               <Button variant={"outline-primary"} className="w-full">
