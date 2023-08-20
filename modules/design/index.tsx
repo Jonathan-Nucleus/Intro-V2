@@ -2,7 +2,7 @@ import { FC } from "react";
 import Button from "../../components/Button";
 import { useMediaQuery } from "react-responsive";
 
-const Blockchain: FC = () => {
+const Design: FC = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
   return (
@@ -11,55 +11,64 @@ const Blockchain: FC = () => {
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Smart Contracts
+              Architectural Design
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Solidity
+                Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Truffle
+                Knowledge-based Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Remix
+                Evolutionary Algorithms
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Swarm Intelligence
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Dev Tools
+              Application Design
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                IPFS
+              Vision Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Metamask
+              Natural Language Processing
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Moralis
+              Robotics and Automation
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Chainlink
+              Recommender Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Kaleido
+              Personal Assistants
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                AWS Managed Blockchain
+              Predictive Algorithms
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Platform
+              Ethical and User-Centric Design
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Ethereum
+                Transparency and Explainability
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Hyperledger Fabric
+                Privacy and Security
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Fairness and Bias Mitigation
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Human-AI Collaboration
               </Button>
             </div>
           </div>
@@ -67,56 +76,65 @@ const Blockchain: FC = () => {
       ) : (
         <div className="flex flx-row h-full w-full">
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Smart Contracts
+          <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+              Architectural Design
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Solidity
+                Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Truffle
+                Knowledge-based Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Remix
+                Evolutionary Algorithms
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Swarm Intelligence
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Dev Tools
+          <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+              Application Design
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                IPFS
+              Vision Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Metamask
+              Natural Language Processing
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Moralis
+              Robotics and Automation
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Chainlink
+              Recommender Systems
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Kaleido
+              Personal Assistants
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                AWS Managed Blockchain
+              Predictive Algorithms
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Platform
+            <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+              Ethical and User-Centric Design
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Ethereum
+                Transparency and Explainability
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Hyperledger Fabric
+                Privacy and Security
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Fairness and Bias Mitigation
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+                Human-AI Collaboration
               </Button>
             </div>
           </div>
@@ -126,4 +144,4 @@ const Blockchain: FC = () => {
   );
 };
 
-export default Blockchain;
+export default Design;

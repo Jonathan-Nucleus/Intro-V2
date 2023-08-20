@@ -2,7 +2,7 @@ import { FC } from "react";
 import Button from "../../components/Button";
 import { useMediaQuery } from "react-responsive";
 
-const WebMobile: FC = () => {
+const Deploy: FC = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
   return (
@@ -11,76 +11,52 @@ const WebMobile: FC = () => {
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Front End
+            Scalability & Integration
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                React
+              Model Serving
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                React Native
+              API Creation
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Flutter
+              Cloud Deployment
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                JavaScript
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                TypeScript
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Dart
+              Edge Deployment
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Backend End
+            Monitoring & Maintenance
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Nodejs
+              Model Monitoring
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Python
+              Continuous Learning
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                NoSQL DBs
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                GraphQL
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Containers
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Cloud Functions
+              Error Analysis
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Platform
+            Security & Compliance
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                AWS
+              Adversarial Attacks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                GCP
+              Data Privacy & GDPR
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Azure
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Firebase
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Amplify
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Apollo
+              Model Encryption
               </Button>
             </div>
           </div>
@@ -88,77 +64,53 @@ const WebMobile: FC = () => {
       ) : (
         <div className="flex flx-row h-full w-full">
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Front End
+          <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+            Scalability & Integration
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                React
+              Model Serving
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                React Native
+              API Creation
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Flutter
+              Cloud Deployment
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                JavaScript
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                TypeScript
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Dart
+              Edge Deployment
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Backend End
+          <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+            Monitoring & Maintenance
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Nodejs
+              Model Monitoring
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Python
+              Continuous Learning
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                NoSQL DBs
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                GraphQL
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Containers
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Cloud Functions
+              Error Analysis
               </Button>
             </div>
           </div>
           <div className="flex flex-col h-full w-4/12">
-            <div className="flex h-10 justify-center items-center w-full shadow-sm">
-              Platform
+          <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
+            Security & Compliance
             </div>
-            <div className="flex flex-col h-full justify-start pt-10 items-center w-full px-2 gap-4">
+            <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                AWS
+              Adversarial Attacks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                GCP
+              Data Privacy & GDPR
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Azure
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Firebase
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Amplify
-              </Button>
-              <Button variant={"outline-primary"} className="w-full">
-                Apollo
+              Model Encryption
               </Button>
             </div>
           </div>
@@ -168,4 +120,4 @@ const WebMobile: FC = () => {
   );
 };
 
-export default WebMobile;
+export default Deploy;

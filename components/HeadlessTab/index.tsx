@@ -28,7 +28,7 @@ const HeadlessTab: FC<TabsComponentProps> = ({ tabTitles, content }) => {
   return (
     <div className={`px-2 py-16 sm:px-0 ${ isMobile ? "w-11/12" : isTabletOrMobile ? "w-10/12" : "w-8/12"}`}>
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+        <Tab.List className="flex space-x-1 rounded-xl bg-gray-100 p-1">
           {tabTitles.map((title, idx) => (
             <Tab
               key={idx}
@@ -38,7 +38,7 @@ const HeadlessTab: FC<TabsComponentProps> = ({ tabTitles, content }) => {
                   "ring-white focus:outline-none",
                   selected
                     ? "bg-white shadow"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                    : "text-gray-900 hover:bg-white/[0.12] hover:text-white"
                 )
               }
             >

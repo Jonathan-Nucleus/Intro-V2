@@ -79,12 +79,12 @@ export const coreAreasOfService = [
   },
 ];
 
-export const safetycommitment = "The ever-evolving realm of artificial intelligence holds immense potential, but with it comes an intrinsic responsibility to ensure its ethical and secure development. We are ardently committed to fostering AI systems that are not only advanced but also accountable, transparent, and devoid of biases. Our objective is to usher in an era where AI serves humanity constructively, respects human rights, and operates without causing harm"
+export const safetycommitment = "The ever-evolving study of artificial intelligence holds immense potential, but with it comes an intrinsic responsibility to ensure its ethical and secure development. I am ardently committed to fostering AI systems that are not only advanced but also accountable, transparent, and devoid of biases. My objective is to usher in an era where AI serves humanity constructively, respects human rights, and operates without causing harm."
 
-export const areaofinterest = "My areas of interest in AI engineering encompass a focused range of cutting-edge domains, including Neural Networks, Computer Vision, NLP, Autonomous Systems, Knowledge Representation, and Planning and Decision Making. My passion lies in exploring and advancing these facets of AI to drive innovation and solve complex challenges at the forefront of technology."
+export const areaofinterest = "My areas of interest encompass a focused range of cutting-edge domains, including Deep Neural Networks, Computer Vision, Language Models, Autonomous Systems, Quantum ML, Knowledge Representation, as well as Planning and Decision Making Systems. My passion lies in exploring and advancing innovation and solve complex challenges at the forefront of AI technology."
 
 export const portfolio = "A FinTech Innovator with an Impressive Portfolio of Diverse Projects in Multiple Financial Domains."
 
-export const expertise = "A Diverse Technologist with Expertise in Web & Mobile Development, Blockchain, and Artificial Intelligence."
+export const expertise = "I possess extensive experience across three core segments: Design, Development and Deployment."
 
 export const briefBio = "Jonathan is a seasoned Senior Full Stack Web-Mobile, Blockchain and Machine Learning Engineer, who possesses a genuine passion for the ever-evolving world of Computer Science and Financial Technologies. He has acquired a comprehensive educational background, encompassing a variety of disciplines ranging from Business, Economics, Software Development to Data Science, and has earned esteemed credentials from leading institutions across South Korea, Canada and the United States."

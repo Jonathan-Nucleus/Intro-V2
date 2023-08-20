@@ -19,11 +19,12 @@ import {
 } from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
 import HeadlessTab from "../components/HeadlessTab";
-import WebMobile from "../modules/webmobile";
-import Blockchain from "../modules/blockchain";
-import AI from "../modules/ai";
+import WebMobile from "../modules/design";
+import Blockchain from "../modules/dev";
+import AI from "../modules/deploy";
 import Lottie from "lottie-react";
 import animationData from "../public/landingai.json";
+import Design from "../modules/design";
 
 const Home: NextPageWithLayout = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -83,7 +84,9 @@ const Home: NextPageWithLayout = () => {
               <Button
                 variant={"outline-primary"}
                 onClick={handleGetStarted}
-                className={"bg-transparent border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"}
+                className={
+                  "bg-transparent border border-[#4F46E5] h-10 rounded-xl w-[200px] text-gray-900"
+                }
               >
                 <p className="text-[#4F46E5] font-sans font-bold">
                   Jonathan Daniels
@@ -123,19 +126,15 @@ const Home: NextPageWithLayout = () => {
               Engineer
             </p>
           </div>
-         
-            <div
-              className={` ${
-                isDesktopOrLaptop ? "w-6/12" : "w-9/12"
-              } h-20 w-80 flex justify-center items-center mt-24 mb-2 rounded-full`}
-            >
-              <Lottie
-                animationData={animationData}
-                loop={true}
-                autoplay={true}
-              />
-            </div>
-    
+
+          <div
+            className={` ${
+              isDesktopOrLaptop ? "w-6/12" : "w-9/12"
+            } h-20 w-80 flex justify-center items-center mt-24 mb-2 rounded-full`}
+          >
+            <Lottie animationData={animationData} loop={true} autoplay={true} />
+          </div>
+
           <div
             className={`flex ${
               isTabletOrMobile
@@ -226,43 +225,7 @@ const Home: NextPageWithLayout = () => {
                   isTabletOrMobile ? "mb-6" : isMobile ? "pt-4" : ""
                 } z-0`}
               >
-                <div className="w-full" onClick={handleSkills}>
-                  <Card
-                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                  >
-                    <p className="text-white text-lg font-sans font-semibold">
-                      Design & Architecture
-                    </p>
-                  </Card>
-
-                  <Card
-                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center mb-2`}
-                  >
-                    <p className="text-white text-lg font-sans font-semibold">
-                      Building & Maintenance
-                    </p>
-                  </Card>
-
-                  <Card
-                    className={`h-[65px] bg-[#4F46E5] w-full roundedXl flex flex-row justify-around items-center`}
-                  >
-                    <p className="text-white text-lg font-sans font-semibold">
-                      Deployment & Integration
-                    </p>
-                  </Card>
-                </div>
-              </div>
-              <p className="text-gray-800 text-md font-sans text-justify mb-6">
-                {areaofinterest}
-              </p>
-            </Card>
-          ) : (
-            <Card className="h-[600px] w-8/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[50px] z-0">
-              <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
-                <div className="w-full" onClick={handleSkills}>
-                  
-                </div>
-                <div className="w-full">
+                <div className="h-full w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
                     Commitment to Safe AI Development
                   </p>
@@ -270,7 +233,28 @@ const Home: NextPageWithLayout = () => {
                     {safetycommitment}
                   </p>
                 </div>
-                <div className="w-full">
+                <div className="h-full w-full">
+                  <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
+                    Areas of Interest
+                  </p>
+                  <p className="text-gray-800 text-md font-sans text-justify mb-6">
+                    {areaofinterest}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          ) : (
+            <Card className="h-[600px] w-8/12 roundedXl flex flex-row justify-around items-left bg-white absolute bottom-[50px] z-0">
+              <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
+                <div className="h-full w-full">
+                  <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
+                    Commitment to Safe AI Development
+                  </p>
+                  <p className="text-gray-800 text-md font-sans text-justify mb-6">
+                    {safetycommitment}
+                  </p>
+                </div>
+                <div className="h-full w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
                     Areas of Interest
                   </p>
@@ -333,14 +317,10 @@ const Home: NextPageWithLayout = () => {
             </p>
           </div>
           <HeadlessTab
-            tabTitles={[
-              isDesktopOrLaptop ? "Design & Architecture" : "Design",
-              isDesktopOrLaptop ? "Building & Maintenance" : "Build",
-              isDesktopOrLaptop ? "Deployment & Integration" : "Launch",
-            ]}
+            tabTitles={["Design", "Development", "Deployment"]}
             content={[
               <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>
-                <WebMobile />
+                <Design />
               </div>,
               <div className={isDesktopOrLaptop ? "h-[600px]" : "h-full"}>
                 <Blockchain />
