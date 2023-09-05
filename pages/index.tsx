@@ -142,7 +142,7 @@ const Home: NextPageWithLayout = () => {
                 : "flex-row w-8/12 justify-between items-center mt-32 px-4"
             }`}
           >
-            <a
+            {/* <a
               href="https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=71a8dda6-21cc-4c68-a4e0-fa5cbd27b8d6"
               target="_blank"
               rel="noopener noreferrer"
@@ -157,7 +157,7 @@ const Home: NextPageWithLayout = () => {
                   Resume File
                 </p>
               </Button>
-            </a>
+            </a> */}
             <a
               href="https://breathing.ai/"
               target="_blank"
