@@ -11,20 +11,26 @@ const Design: FC = () => {
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-col h-full w-full">
             <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Architectural Design
+              Deep Learning Architectures
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Neural Networks
+               Convolutional Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Knowledge-based Systems
+               Recurrent Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Evolutionary Algorithms
+               Generative Adversarial Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Swarm Intelligence
+               Transformers
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+               Autoencoders
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+               Variational Autoencoders
               </Button>
             </div>
           </div>
@@ -34,16 +40,16 @@ const Design: FC = () => {
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-              Vision Systems
+              Generative Models
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Natural Language Processing
+              Object Detection
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Robotics and Automation
+              Object Recognition
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Recommender Systems
+              Autonomous Agents
               </Button>
               <Button variant={"outline-primary"} className="w-full">
               Personal Assistants
@@ -77,20 +83,26 @@ const Design: FC = () => {
         <div className="flex flx-row h-full w-full">
           <div className="flex flex-col h-full w-4/12 border-r border-[#4F46E5]">
           <div className="flex h-10 justify-center items-center w-full text-white bg-[#4F46E5]">
-              Architectural Design
+             Deep Learning Architectures
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-                Neural Networks
+               Convolutional Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Knowledge-based Systems
+               Recurrent Neural Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Evolutionary Algorithms
+               Generative Adversarial Networks
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-                Swarm Intelligence
+               Transformers
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+               Autoencoders
+              </Button>
+              <Button variant={"outline-primary"} className="w-full">
+               Variational Autoencoders
               </Button>
             </div>
           </div>
@@ -100,16 +112,16 @@ const Design: FC = () => {
             </div>
             <div className="flex flex-col h-full justify-start pt-10 pb-10 items-center w-full px-2 gap-4">
               <Button variant={"outline-primary"} className="w-full">
-              Vision Systems
+              Generative Models
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Natural Language Processing
+              Object Detection
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Robotics and Automation
+              Object Recognition
               </Button>
               <Button variant={"outline-primary"} className="w-full">
-              Recommender Systems
+              Autonomous Agents
               </Button>
               <Button variant={"outline-primary"} className="w-full">
               Personal Assistants

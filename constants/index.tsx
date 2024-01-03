@@ -79,9 +79,9 @@ export const coreAreasOfService = [
   },
 ];
 
-export const safetycommitment = "The ever-evolving study of artificial intelligence holds immense potential, but with it comes an intrinsic responsibility to ensure its ethical and secure development. I am ardently committed to fostering AI systems that are not only advanced but also accountable, transparent, and devoid of biases. My objective is to usher in an era where AI serves humanity constructively, respects human rights, and operates without causing harm."
+export const bio = "Hello! I'm a talented software engineer based in the vibrant city of Vancouver, Canada. My passion lies at the intersection of science, technology, and engineering, where I firmly believe in their transformative power to make the world a better place. I thrive on the challenges and innovations in my field and find great joy in collaborating with fellow enthusiasts who share my zeal. When I'm not immersed in the digital world, you'll find me indulging in the serenity of nature, or losing myself in a good book."
 
-export const areaofinterest = "My areas of interest encompass a focused range of cutting-edge domains, including Deep Neural Networks, Computer Vision, Language Models, Autonomous Systems, Quantum ML, Knowledge Representation, as well as Planning and Decision Making Systems. My passion lies in exploring and advancing innovation and solve complex challenges at the forefront of AI technology."
+export const areaofinterest = "My areas of interest encompass a focused range of cutting-edge domains, including Deep Neural Networks, Computer Vision, Language Models, Autonomous Systems, Knowledge Representation, as well as Planning and Decision Making Systems. My passion lies in exploring and advancing innovation and solve complex problems at the forefront of AI technology."
 
 export const portfolio = "A Machine Learning Innovator with an Impressive Portfolio of Diverse Projects in Multiple Domains of Industry."
 

@@ -11,11 +11,11 @@ import Accordion from "../modules/accordion";
 import {
   accordionData,
   areaofinterest,
+  bio,
   briefBio,
   coreAreasOfService,
   expertise,
   portfolio,
-  safetycommitment,
 } from "../constants";
 import { NextPageWithLayout } from "../types/next-page";
 import HeadlessTab from "../components/HeadlessTab";
@@ -107,7 +107,7 @@ const Home: NextPageWithLayout = () => {
             }`}
           >
             <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 text-sm font-sans">
-              Empowering 25+ Companies and Counting
+              Collaborated with 30+ Companies
             </p>
           </Button>
           <div className="flex flex-col justify-center items-center leading-tight">
@@ -116,7 +116,7 @@ const Home: NextPageWithLayout = () => {
                 isTabletOrMobile ? "text-[30px]" : "text-[50px]"
               }`}
             >
-              Artificial Intelligence
+              Senior Software
             </p>
             <p
               className={`text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-900 font-sans font-extrabold mb-8 ${
@@ -142,8 +142,8 @@ const Home: NextPageWithLayout = () => {
                 : "flex-row w-8/12 justify-between items-center mt-32 px-4"
             }`}
           >
-            {/* <a
-              href="https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=71a8dda6-21cc-4c68-a4e0-fa5cbd27b8d6"
+            <a
+              href="https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume%20(1).pdf?alt=media&token=d683df68-cc68-4db1-a8a0-d279d7dcbdc5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -154,12 +154,12 @@ const Home: NextPageWithLayout = () => {
                 }`}
               >
                 <p className="text-[#4F46E5] text-sm font-sans font-bold">
-                  Resume File
+                  Resume
                 </p>
               </Button>
-            </a> */}
+            </a>
             <a
-              href="https://breathing.ai/"
+              href="https://nucleusinstitute.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -191,7 +191,7 @@ const Home: NextPageWithLayout = () => {
               </Button>
             </a>
             <a
-              href="https://www.linkedin.com/company/nextmindsai/"
+              href="https://www.upwork.com/agencies/1388543012695896064/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -202,7 +202,7 @@ const Home: NextPageWithLayout = () => {
                 }
               >
                 <p className="text-[#4F46E5] text-sm font-sans font-bold">
-                  AI Lab
+                  Studio
                 </p>
               </Button>
             </a>
@@ -227,10 +227,10 @@ const Home: NextPageWithLayout = () => {
               >
                 <div className="h-full w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
-                    Commitment to Safe AI Development
+                    Bio
                   </p>
                   <p className="text-gray-800 text-md font-sans text-justify mb-6">
-                    {safetycommitment}
+                    {bio}
                   </p>
                 </div>
                 <div className="h-full w-full">
@@ -248,10 +248,10 @@ const Home: NextPageWithLayout = () => {
               <div className="h-full w-6/12  flex flex-col justify-between items-left mr-4 z-0">
                 <div className="h-full w-full">
                   <p className="text-black text-lg font-sans font-extrabold mb-4 text-left">
-                    Commitment to Safe AI Development
+                    Bio
                   </p>
                   <p className="text-gray-800 text-md font-sans text-justify mb-6">
-                    {safetycommitment}
+                    {bio}
                   </p>
                 </div>
                 <div className="h-full w-full">
@@ -283,7 +283,7 @@ const Home: NextPageWithLayout = () => {
         >
           {isMobile ? (
             <div
-              className="h-[400px]  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"
+              className="h-[400px] mt-4 mb-4  w-11/12 bg-transparent flex rounded-3xl justify-center items-center"
               ref={isTabletOrMobile ? cardRef : null}
             >
               <Image
@@ -305,7 +305,7 @@ const Home: NextPageWithLayout = () => {
           ref={skillRef}
         >
           <div className="flex flex-col justify-center items-center leading-tight">
-            <p className="text-black text-[30px] font-sans font-extrabold mt-10 mb-4 text-center">
+            <p className="text-black text-[30px] font-sans font-extrabold mt-16 mb-4 text-center">
               Technical Expertise
             </p>
           </div>
@@ -422,7 +422,7 @@ const Home: NextPageWithLayout = () => {
         <div className="h-[150px] w-full bg-white flex flex-col justify-center items-center">
           <div className={`flex flex-row mb-4 w-[250px] justify-around px-6`}>
             <a
-              href="https://github.com/Jonathan-Multivurse"
+              href="https://github.com/Jonathan-Nucleus"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -435,7 +435,7 @@ const Home: NextPageWithLayout = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/j2daniels/"
+              href="https://www.linkedin.com/in/mind4machine/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -448,7 +448,7 @@ const Home: NextPageWithLayout = () => {
               />
             </a>
             <a
-              href="https://twitter.com/jonathanvurse"
+              href="https://twitter.com/mind4machine"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -462,7 +462,7 @@ const Home: NextPageWithLayout = () => {
             </a>
           </div>
           <p className="text-gray-500 text-sm font-sans">
-            Multivurse Ⓒ 2023. All rights reserved
+            Vancouver, British Columbia, Canada
           </p>
         </div>
       </main>
