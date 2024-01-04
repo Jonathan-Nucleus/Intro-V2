@@ -1,22 +1,22 @@
 steps:
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/multivurse-inc/landing:$COMMIT_SHA", "."]
+    args: ["build", "-t", "gcr.io/multivurse-inc/personal:$COMMIT_SHA", "."]
   # Push the container image to Container Registry
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/multivurse-inc/landing:$COMMIT_SHA"]
+    args: ["push", "gcr.io/multivurse-inc/personal:$COMMIT_SHA"]
   # Deploy container image to Cloud Run
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     entrypoint: gcloud
     args:
       - "run"
       - "deploy"
-      - "landing"
+      - "personal"
       - "--image"
-      - "gcr.io/multivurse-inc/landing:$COMMIT_SHA"
+      - "gcr.io/multivurse-inc/personal:$COMMIT_SHA"
       - "--region"
       - "us-central1"
       - "--allow-unauthenticated"
 images:
-  - "gcr.io/multivurse-inc/landing:$COMMIT_SHA"
+  - "gcr.io/multivurse-inc/personal:$COMMIT_SHA"
 timeout: 7200s
